@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	width:500px;
+	margin:auto;
+	text-align:center;
+}
+
+dl {
+	
+}
+
+dt {
+	cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 2em;
+	background: #e3e3e3;
+	border-bottom: 1px solid #c5c5c5;
+	border-top: 1px solid #ffffff;
+}
+
+dt:first-child {
+	border-top:none;
+}
+
+dt:nth-last-child(2) {
+	border-bottom:none;	
+}
+
+dd {
+	margin:0;
+	padding:1em 0;
+}
+
+.hide {
+	display:none;	
+}
+
+
+
+

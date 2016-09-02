@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {padding: 0; margin: 0;}
+
+body {
+  background: #000 url('../images/bg2.jpg') center center fixed no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align:center;
+  font:Tahoma, Geneva, sans-serif;
+}
+
+#header {
+	position:absolute;
+	top:45%;
+	left:15%;
+}
+
+#content {
+	margin: 0 auto;
+	text-align:left;
+}
+
+#mininav {
+	width:435px;
+	margin: 20px auto;
+	text-align:left;
+}
+
+:link img {
+	border:0px none;	
+}
+
+:visited img {
+	border:0px none;	
+}
+
+a:active {
+	outline: none;
+}
+
+a:focus {
+	-moz-outline-style: none;
+	outline: none;
+}
+
+#nav {
+	padding-top:16px;
+	width:435px;
+	height:76px;
+	position:absolute;
+	top:45%;
+	right:15%;
+}
+
+
+#navbutton {
+	width:68px;
+	height:68px;
+}
+
+#flashtitle {
+	width:130px;
+	height:25px;
+	
+	
+	position:relative;
+	top:23px;
+	left:150px;
+}
+
+.drop-shadow {
+   position:relative;
+   width:90%;
+}
+
+.drop-shadow:before,
+.drop-shadow:after {
+   content:"";
+   position:absolute;
+   z-index:-1;
+   bottom:15px;
+   left:10px;
+   width:50%;
+   height:20%;
+   max-width:300px;
+   -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   -webkit-transform:rotate(-3deg);
+   -moz-transform:rotate(-3deg);
+   -o-transform:rotate(-3deg);
+   transform:rotate(-3deg);
+}
+
+.drop-shadow:after{
+   right:10px;
+   left:auto;
+   -webkit-transform:rotate(3deg);
+   -moz-transform:rotate(3deg);
+   -o-transform:rotate(3deg);
+   transform:rotate(3deg);
+ }

@@ -1,0 +1,67 @@
+Clearbricks
+===========
+
+What is this?
+-------------
+
+No, Clearbricks is not yet another framework. Clearbricks is not cool at all and
+does not even have a nice website. It won't make you smart neither have great
+ideas for you.
+
+Clearbricks is only about code and efficiency, consider it as a toolbox. And
+please, do me a favor, don't call it a framework :-)
+
+How do I use it?
+----------------
+
+Clearbricks is about "using what we need when we need it". Pick the module(s)
+you need and add it to your code. The only thing you'll always need is the
+"common" directory.
+
+Once you're ready, you have to create a _common.php file on top of your
+Clearbricks path (or wherever you want) and add $__autoload entries for your
+modules.
+
+Take a look at the _common.php file.
+
+Of course, you're encouraged to use the $__autoload magic for your own classes.
+
+Use it with Subversion
+----------------------
+
+You may think that all this subdirectories is a mess. You're quite right. But
+one day, you'll find it cool to use Clearbricks modules in your subversion
+repository as some external properties. This day, you'll love me :-)
+
+Clearbricks subersion repository is located at:
+https://clearbricks.org/svn
+
+Here is an example of using Clearbricks and dbLayer in your own subversion
+repository as an external property:
+
+First, we create a Clearbricks root.
+
+$ mkdir clearbricks
+$ svn add clearbricks
+$ svn ci
+
+And now, add externals definitions
+
+$ cd clearbricks
+$ svn propedit svn:externals .
+
+Your editor fires up, type:
+
+common https://clearbricks.org/svn/trunk/common
+dblayer https://clearbricks.org/svn/trunk/dblayer
+
+Save and "svn up".
+
+Then, you can create a _common.php file wich will contain:
+
+<?php
+require dirname(__FILE__).'/common/_main.php';
+$__autoload['dbLayer'] = dirname(__FILE__).'/dblayer/dblayer.php';
+?>
+
+You're done!

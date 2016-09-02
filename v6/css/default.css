@@ -1,0 +1,201 @@
+html, body {
+	background-color:#ccc;
+	margin:0;
+	padding:0;
+}
+
+body {
+	margin:0;
+	padding:0;
+		
+}
+
+#content {
+	width:960px;
+	margin:0 auto;
+	background-color:#fefefe;
+	min-height:100%;
+}
+
+#resumelink {
+	
+	width:150px;
+	height:30px;
+	position:relative;
+	top:104px;
+	left:277px;
+}
+
+#resumelink a {
+	display:block;
+	width:150px;
+	height:30px;	
+}
+
+#skills {
+	margin:10px auto;
+	width:800px;	
+}
+
+#visual_timeline {
+	margin:0 auto;
+	width:800px;
+	height:1900px;
+	position:relative;
+}
+
+.timelinebg {
+	
+	position:absolute;
+	background-image: url("../siteimages/timeline.png");
+	width:800px;
+	height:1900px;
+	z-index:2;
+}
+
+.badge {
+  position:absolute;
+}
+
+.badge .badgeicon {
+  position:absolute;
+  left:-45px;
+  top:-15px;
+  z-index:5;
+}
+
+.badge .badgeicon:hover + .details {
+ 	display:block; 
+}
+
+.details {
+	display:none;
+}
+
+.details .flag {
+  border-right: 36px solid transparent;
+  border-top: 36px solid rgba(141,209, 243, .7);
+  border-left: 36px solid rgba(141,209, 243, .7);
+  border-bottom: 36px solid rgba(141,209, 243, .7);
+  position:absolute;
+  float:left;
+  z-index:3;
+}
+
+.badge .flagtext {
+  padding:8px;
+  padding-left:70px;
+  position:relative;
+  z-index:4;
+}
+
+.badge .flagtext p {
+  margin:0 0 3px 0;
+  
+  font-family:Tahoma, Geneva, sans-serif;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.category_header {
+	margin:0 auto;
+	width:800px;
+}
+
+#header {
+	text-align:center;
+	width:960px;
+	height:200px;
+	margin:0px 0 70px 0;
+	padding-top:60px;
+}
+
+
+#nav {
+	margin:0 auto;
+	width:800px;
+	height:100px;
+	background:url("../siteimages/nav.png") no-repeat;	
+}
+
+#nav .navitem {
+	/*border:2px solid black;*/
+	margin-right:15px;
+	width:95px;
+	height:92px;
+	float:left;
+}
+
+#nav .navitem a {
+	display:block;
+	width:100%;
+	height:100%;	
+}
+
+.clearing {
+	clear:both;	
+}
+
+
+#contact {
+	width:830px;
+	height:1350px;
+	margin:10px auto;
+	padding:15px;
+		
+}
+
+.contactimage {
+	padding:0;
+	margin: 3px;
+	width:394px;
+	height:197px;	
+}
+
+#work {
+	height:1350px;
+}
+
+#projects { 
+	line-height:1.3em;
+	list-style:none;	
+}
+
+#projects a {
+	color:#fff;
+	text-decoration:none;
+	
+}
+
+#projects img {
+	border:0;
+}
+
+#projects a:visted {
+	color:#ccc;
+}
+
+.projectItem {
+	margin:3px;
+	padding:6px;
+	
+	width:200px;
+	height:180px;
+	
+	display:block;
+	float:left;
+	
+	font-family: 'Oswald', sans-serif;
+	
+	background-color:#333;
+}
+
+
+#projects .cat_header {
+	font-family: 'Oswald', sans-serif;
+	font-size:26px;
+	color:#a40404;
+	display:block;
+	margin-bottom:15px;
+	
+}

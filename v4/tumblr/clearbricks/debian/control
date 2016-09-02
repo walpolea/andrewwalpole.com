@@ -1,0 +1,14 @@
+Source: libclearbricks
+Section: web
+Priority: optional
+Maintainer: Mikael Poussard <mik@gandi.net>
+Build-Depends: debhelper (>= 4.0.0), php5-cli
+Standards-Version: 3.6.1
+
+Package: libclearbricks
+Architecture: all
+Depends: ${misc:Depends}, php5-cli | php5-cgi | libapache2-mod-php5 | libapache-mod-php5
+Suggests: php5-pgsql | php5-sqlite | php5-mysql, php5-gd, php5-tidy
+Description: libclearbricks is a set of PHP classes and utilities
+ Clearbricks is not yet another PHP framework. Clearbricks is only
+ about code and efficiency, consider it as a toolbox.

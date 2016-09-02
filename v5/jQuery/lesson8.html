@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 8</title>
+
+<style type="text/css">
+	body {
+		width:600px;
+		margin:auto;	
+	}
+	
+	#contact {
+		padding:20px;
+		width:560px;
+		background:#c5c5c5;
+	}
+	
+	.js #contact {
+		position:absolute;
+		display:none;	
+	}
+	
+	.js .close {
+		pointer:cursor;
+	}
+	
+	
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	//set the document.ready function
+	$(init);
+	
+	function init() {
+	
+		$("html").addClass("js");
+		
+		var contactForm = {
+			container:$("#contact"),
+			
+			config: {
+				effect:"slideToggle",
+				speed:500
+			},
+			
+			init:function( config ) {
+				$.extend( this.config, config );
+				$("<button></button>", {
+					text:"CONTACT ME"	
+				})
+					.insertAfter("article:first")
+					.on("click", this.show);
+					
+				if( !contactDiv.find("span.close").length )
+					contactForm.close.call(contactForm.container);
+			},
+			
+			show: function() {
+				var cf = contactForm,
+					container = cf.container,
+					config = cf.config;
+				
+				if( container.is(":hidden") ) {
+					
+					//cf.close.call(container);
+					cf.container[config.effect]( config.speed );
+				}
+			},
+			
+			close: function() {
+				var contactDiv = $(this);
+				
+				//if( contactDiv.find("span.close").length ) return;
+				
+				$("<span class=close>X</span>")
+					.prependTo( this )
+					.on("click", function() {
+						console.log("click");
+						contactDiv[contactForm.config.effect]( contactForm.config.speed );
+					})
+			}
+		}
+		
+		contactForm.init( {
+			effect:"fadeToggle",
+			speed:300
+		});
+		
+	}
+	
+</script>
+
+
+</head>
+<body>
+	<article>
+    	<h1>My Awesome Post</h1>
+        <p>
+        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </article>
+    <div id="contact">
+    	<h2>contact me</h2>
+        <form action="#">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input name="name" is="name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input name="email" is="email">
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>

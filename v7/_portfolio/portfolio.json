@@ -1,0 +1,152 @@
+{
+	"portfolio": [
+		{
+			"title":"art.andrewwalpole.com",
+			"description":"code-generated art that I do",
+			"link":"http://art.andrewwalpole.com/preview",
+			"image":"art.jpg",
+			"tags": [
+				"art",
+				"design"
+			]
+		},
+		{
+			"title":"Port of Houston Map",
+			"description":"interactive map showing route timetables between international ports and the Port of Houston",
+			"link":"http://www.portofhouston.com/static/gen/map/PortMap_server.html",
+			"image":"portmap.jpg",
+			"tags": [
+				"flash",
+				"development",
+				"xml"
+			]
+		},
+		{
+			"title":"Atlantic Station Mall Map",
+			"description":"interactive directory map for the Atlantic Station Mall",
+			"link":"http://www.atlanticstation.com/shop/directory",
+			"image":"atlanticstationmap.jpg",
+			"tags": [
+				"flash",
+				"development",
+				"json"
+			]
+		},
+		{
+			"title":"Mixboard",
+			"description":"an interactive, flash-based sound mixing concept",
+			"link":"http://labs.andrewwalpole.com/MixBoard/",
+			"image":"mixboard.jpg",
+			"tags": [
+				"flash",
+				"development",
+				"design",
+				"audio"
+			]
+		},
+		{
+			"title":"03 Designs",
+			"description":"One of my first portfolio websites. Created entirely in flash and driven by a PHP and MySQL back-end.",
+			"link":"http://www.andrewwalpole.com/03DESIGNS/03designs.swf",
+			"image":"03designs.jpg",
+			"tags": [
+				"flash",
+				"development",
+			    "PHP",
+			    "MySQL"
+			]
+		},
+		{
+			"title":"ColorEyes",
+			"description":"mobile game for Android build with Adobe AIR for Android. try your best to match the color in the square",
+			"link":"http://labs.andrewwalpole.com/ColorEyes.swf",
+			"image":"coloreyes.jpg",
+			"tags": [
+				"flash",
+				"mobile",
+				"AIR",
+				"development",
+				"android",
+				"games"
+			]
+		},
+		{
+			"title":"Android App Development",
+			"description":"a full listing of the games and apps I have built for android with AIR for Android",
+			"link":"https://play.google.com/store/apps/developer?id=andrew+walpole",
+			"image":"androiddev.jpg",
+			"tags": [
+				"flash",
+				"mobile",
+				"AIR",
+				"development",
+				"android"
+			]
+		},
+		{
+			"title":"Movie City",
+			"description":"A college project, where we built 3 Flash games in just a few weeks",
+			"link":"http://labs.andrewwalpole.com/MovieCity/EscapeFromMovieCity.html",
+			"image":"moviecity.jpg",
+			"tags": [
+				"flash",
+				"development",
+				"games"
+			]
+		},
+		{
+			"title":"Commet",
+			"description":"Another college project where I tried to build a flash-based social network. Powered by PHP and MySQL.",
+			"link":"http://labs.andrewwalpole.com/Commet/",
+			"image":"commet.jpg",
+			"tags": [
+				"flash",
+				"development",
+			    "PHP",
+			    "MySQL"
+			]
+		},
+		{
+			"title":"Beer Finder",
+			"description":"A simple study of using Flash, Google Maps and the Yelp API to find beer bars.",
+			"link":"http://www.andrewwalpole.com/beerfinder/BeerFinder.html",
+			"image":"beerfinder.jpg",
+			"tags": [
+				"flash",
+				"development",
+			    "APIs"
+			]
+		},
+		{
+			"title":"Screen Saver",
+			"description":"A dynamically generated flash-based screen saver concept.",
+			"link":"http://labs.andrewwalpole.com/ScreenSaver/ScreenSaver.swf",
+			"image":"screensaver.jpg",
+			"tags": [
+				"flash",
+				"development"
+			]
+		},
+		{
+			"title":"Photoshopped Nintendo DS",
+			"description":"Spent 16+ hours to recreate this Nintendo DS image completely from scratch and by hand in photoshop.",
+			"link":"_portfolio/_full/nds_rendered.jpg",
+			"image":"nds_rendered.jpg",
+			"tags": [
+				"photoshop",
+				"design"
+			]
+		},
+		{
+			"title":"Radial Collision Detection Library",
+			"description":"A simple collision detection library that detects collisions of objects based on a radius and returns the resultant collision angle",
+			"link":"http://labs.andrewwalpole.com/Collider/RadiusCollisionTest.swf",
+			"image":"collider.jpg",
+			"tags": [
+				"flash",
+				"code",
+				"development"
+			]
+		}
+	]
+}

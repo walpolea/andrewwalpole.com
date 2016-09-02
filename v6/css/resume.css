@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#content { 
+/*	width:895px;
+	padding:40px 15px; 
+	background-color:#fff;*/
+	padding-bottom:20px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#resume_contact {
+	font:bold 10px Arial, Helvetica, sans-serif;
+	color:#0099FF;
+}
+
+#resume_contact a {
+	color:#0099FF;
+}
+
+.resume_section {
+	margin:10px auto;
+	padding:5px;
+	width:750px;
+	background:#fff;
+	color:#222;
+	text-align:left;
+	line-height:1.6em;
+	clear:both;
+}
+
+.divider { 
+	margin:0 auto;
+	width:750px;
+	border-bottom:2px #ccc solid; 
+	clear:both;
+}
+
+.resume_header {
+	margin:0 5px 0 0;
+	width:125px;	
+	float:left;	
+	font:bold 16px Arial, Helvetica, sans-serif;
+	color:#2A4679;
+}
+
+.resume_headerspan {
+	margin:15px 0 5px 0;
+	font:bold 16px Arial, Helvetica, sans-serif;
+	color:#2A4679;
+}
+
+.resume_content {
+	width:600px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.resumebold {
+	font-weight:bold;
+	color:#333;
+}
+
+h1 {
+	font: Georgia, "Times New Roman", Times, serif;
+	text-align:left;
+}
+	
+h2 {
+	color:#444;
+}
+
+ul {
+	margin:5px 0;
+}
+
+ul li {
+	margin: 1px 20px;
+	color:#555;
+}
+
+
+a { 
+	color:#0099FF;
+}
+
+a:hover { font-style:italic; }

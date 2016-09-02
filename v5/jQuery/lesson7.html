@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 6</title>
+
+<style type="text/css">
+	article {
+		width:600px;
+		margin:auto;	
+	}
+	
+	blockquote.co {
+		float:right;
+		background: #e3e3e3;
+		font-size:2em;
+		width:25%;	
+	}
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	//set the document.ready function
+	$(init);
+	
+	function init() {
+		//$("h1").after("hello from js");
+		//$("p").first().before("hello from js");
+		/*
+		$("<h2></h2>", {
+			text:"Hello World",
+			class: "myClass"	
+		}).appendTo("article");
+		
+		$("<h2></h2>", {
+			text:"Hello World",
+			class: "myClass"	
+		}).prependTo("article");
+		
+		$("<h2></h2>", {
+			text:"Hello World",
+			class: "myClass"	
+		}).insertAfter("h1");
+		*/
+		
+		//$("h1").appendTo( "article" );
+		
+		//$("p").eq(0).after( $("h1") );
+		/*
+		$("p").eq(0).after( function() {
+			return $(this).prev();	
+		});
+		*/
+		
+		var co = $("article").find("span.co").each( function() {
+			$("<blockquote></blockquote>", {
+				class: "co",
+				text:$(this).text()	
+			}).prependTo( $(this).closest("p") );
+		});
+		
+		
+	}
+	
+</script>
+
+
+</head>
+<body>
+	<article>
+    	<h1>My Awesome Post</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>
+        	<span class="co">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+    </article>
+</body>
+
+</html>
