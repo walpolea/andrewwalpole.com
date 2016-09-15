@@ -10,7 +10,7 @@
         <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         
         <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.css">
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
         <link type="text/css" rel="stylesheet" href="css/main.css">
     </head>
@@ -32,7 +32,6 @@
                     <li><p><strong>I’m a senior-level software engineer</strong> focused on web technologies. I get today’s technology; systems, platforms, apps, websites, you name it, I’ve probably worked with it.</p></li>
                     <li><p><strong>I’m a professional graphic and ux designer.</strong> I understand how great design has an impact on both function and perception, and how the user experience is the most important underrated aspect of products and services everywhere.</p></li>
                     <li><p><strong>I’m a teacher</strong> both in leadership style and literally. The core of my being is centered around curiosity, exploration and using the two to attain knowledge for personal and professional gain.</p></li>
-                    
                     <li><p><strong>I’m a leader</strong> that believes people are most engaged and effective when they can do what they are passionate about to cause change and growth under a collective purpose.</p></li>
                     <li><p><strong>I’m a strategist</strong> that isn’t afraid to put business first. Having open and honest conversations about structure, process and the change required to align to new and evolving business needs is vital to maintaining the health of any business and functional team within it.</p></li>
                 </ul>
@@ -182,18 +181,40 @@
         
         <section id="portfolio" class="column row">
             <h2>Examples of Work</h2>
-            <div id="portfolio-items" class="row small-up-1 medium-up-2 large-up-4">
-            <ul class="js-masonry" data-masonry-options='{ "itemSelector": ".portfolio-item" }'></ul>
-                
+            <div class="filterer row">
+                <div class="medium-4 column">
+                    <!--<label for="work-filter-input">Search</label>-->
+                    <input type="text" id="work-filter-input" placeholder="search work">
+                </div>
+                <ul class="filter-tags medium-8 column">
+                    <li class="filter-tag">Graphic Design</li>
+                    <li class="filter-tag">Art</li>
+                    <li class="filter-tag">Code</li>
+                </ul>
+
             </div>
+            <ul id="masonry-container"></ul>
+            
+            <div class="reveal large" id="portfolio-modal" data-reveal>
+                <div id="portfolio-item-content"></div>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
         </section>
     
     
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0/masonry.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
         <script src="https://trello.com/1/client.js?key=60bfcf8e3b89bae3d7a7b20e383506c9"></script>
+        <script src="js/trellocms.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+        
         <script src="js/main.js"></script>
     </body>
 </html>

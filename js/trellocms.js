@@ -1,27 +1,44 @@
+//THIS SHOULD ONLY BE USED WITH VERY PUBLIC TRELLO CONTENT
+//AS EVERYTHING IS EXPOSED ON THE CLIENT SIDE
 var TrelloCMS = function() {
-    
-    
+
     var tcms = {};
     
     tcms.boarddata = {};
     
-    tcms.quietAuth = function( n, t, cb ) {
+    tcms.quietAuth = function( n, t, options ) {
         
+        //Quiet Auth works because you give it the app token ahead of time and it sets it in
+        //localStorage where Trello's client.js looks for it when authenticating
         localStorage.setItem("tello_token", t);
         Trello.setToken( t );
         
-        var opts = {
-            name:n, type:"redirect", persist:true, interactive:false, scope:{ read: true, write: true, account: true }, expiration:"never", 
-            success: cb,
+        var default_opts = {
+            name:n, 
+            type:"redirect", 
+            persist:true, 
+            interactive:false, 
+            scope:{ read: true, write: false, account: false }, 
+            expiration:"never", 
+            success: function() {
+                console.log( "Trello Successfully Initialized" );   
+            },
             error: function(e) {
                 console.log("TrelloCMS ERROR: Something went wrong authenticating Trello", e);
             }
         };
+
+        var opts = default_opts;
+        if( options ) {
+            for( var key in options ) {
+                opts[key] = options[key];
+            }
+        }
         
         Trello.authorize(opts);
     }
     
-    tcms.loadBoard( boardID, options ) {
+    tcms.loadBoard = function( boardID, options ) {
         
         var opts = "?";
         
@@ -81,11 +98,31 @@ var TrelloCMS = function() {
         //console.log("no card found");
         return undefined;
     }
+
+    tcms.getCardByName = function( name ) {
+        for( var i = 0; i < this.boarddata.cards.length; i++ ) {
+            
+            if( this.boarddata.cards[i].name.toUpperCase() == name.toUpperCase() ) {
+                return this.boarddata.cards[i];
+            }
+        }
+        return undefined;
+    }
     
     tcms.getListById = function( id ) {
         for( var i = 0; i < this.boarddata.lists.length; i++ ) {
             
             if( this.boarddata.lists[i].id == id ) {
+                return this.boarddata.lists[i];
+            }
+        }
+        return undefined;
+    }
+
+    tcms.getListByName = function( name ) {
+        for( var i = 0; i < this.boarddata.lists.length; i++ ) {
+            
+            if( this.boarddata.lists[i].name.toUpperCase() == name.toUpperCase() ) {
                 return this.boarddata.lists[i];
             }
         }
@@ -131,4 +168,4 @@ var TrelloCMS = function() {
     
     return tcms;
     
-}();
+};

@@ -1,37 +1,40 @@
-function quietAuth( n, t, cb ) {
-    localStorage.setItem("tello_token", t);
-    Trello.setToken( t );
-    
-    var opts = {
-        name:n,
-        type:"redirect",
-        persist:true,
-        interactive:false,
-        scope:{ read: true, write: true, account: true },
-        expiration:"never",
-        success: cb,
-        error: function(e) {
-            //console.log("error, something went wrong with quiet authentication", e);
-        }
-    };
-    
-    Trello.authorize(opts);
-}
-
-Foundation.set_namespace = function () {
-  this.global.namespace = [];
-};
 
 
 var boarddata;
-
+var tcms = new TrelloCMS();
 
 $(init);
 
 function init() {
     $(document).foundation();
+    
+    //get api key: https://trello.com/app-key
     //https://trello.com/1/authorize?key=60bfcf8e3b89bae3d7a7b20e383506c9&scope=read&name=AndrewWalpolePortfolio&expiration=never&response_type=token
-    quietAuth( "AndrewWalpolePortfolio", "2386a520a381119a18d977adb62c88e861ae76b43eb5de823f8f240dc6ab886e", function() { start(); } );
+    tcms.quietAuth( "AndrewWalpolePortfolio", "2386a520a381119a18d977adb62c88e861ae76b43eb5de823f8f240dc6ab886e", { success:start } );
+
+
+    // Initialize Firebase
+    // var config = {
+    //     apiKey: "AIzaSyDwGuxgxXZ4G4QvdyhR7RLaI2Av5c3H86E",
+    //     authDomain: "andrewwalpole-portfolio.firebaseapp.com",
+    //     databaseURL: "https://andrewwalpole-portfolio.firebaseio.com",
+    //     storageBucket: "andrewwalpole-portfolio.appspot.com",
+    // };
+    // firebase.initializeApp(config);
+    
+    //var portfolioDB = firebase.database().ref();
+    //var resume = portfolioDB.child("resume");
+    // resume.child("work").push( {
+    //     name:"",
+    //     description:"",
+    //     link:"",
+    //     images: [
+    //         ""
+    //     ],
+    //     tags:[""]
+    // })
+    //.set({ { resume:{} } });
+
 }
 
 function start() {
@@ -54,7 +57,7 @@ function start() {
 
 function initPortfolioItems() {
     
-    var container = $("#portfolio-items");
+    var container = $("#masonry-container");
     
     var cards = getCardsByLabel( "portfolio item" );
     
@@ -63,6 +66,9 @@ function initPortfolioItems() {
     for( var i = 0; i < cards.length; i++ ) {
         container.append( createPortfolioItem( cards[i] ) );
     }
+
+    //make the pretty grid
+    //masonryLayout();
     
 }
 
@@ -70,24 +76,57 @@ function createPortfolioItem( itemData ) {
     
     console.log( itemData );
     
-    var item = $("<li>").addClass("portfolio-item").addClass("column");
-    var content = $("<div>").addClass("portfolio-item-content");
+    var item = $("<li>")
+        .addClass("portfolio-item")
+        .click( function() {
+            loadPortfolioItemContent( itemData );
+            $("#portfolio-modal").foundation("open");
+        });
     
-    var title = $("<h4>").html( itemData.name );
-    content.append(title);
+    $("<h4>").html( itemData.name ).appendTo(item);
     
     if( itemData.attachments.length > 0 ) {
-        var img = $("<img>").attr("src", itemData.attachments[0].url);
-        content.append(img);
+        $("<img>")
+            .attr("src", itemData.attachments[0].url)
+            .appendTo(item);
     }
-    
-    item.append(content);
+
+    item.imagesLoaded(function () {
+        masonryLayout();
+    });
     
     return item;
     
 }
 
+function masonryLayout() {
+    $('#masonry-container').masonry({
+        itemSelector: '#masonry-container li'
+    });
+}
 
+function loadPortfolioItemContent( itemData ) {
+
+
+    console.log( itemData );
+    var $content = $("#portfolio-modal #portfolio-item-content").empty();
+
+    
+    
+
+    $("<h2>").text( itemData.name ).appendTo($content);
+    $("<div>")
+        .addClass("portfolio-description")
+        .html( marked(itemData.desc) )
+        .appendTo($content);
+
+    for( var i = 0; i < itemData.attachments.length; i++ ) {
+        $("<img>")
+        .attr("src", itemData.attachments[i].url)
+        .appendTo($content);
+    }
+
+}
 
 
 
