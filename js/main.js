@@ -1,7 +1,12 @@
+var $grid;
+
 function masonryLayout() {
-    $('#masonry-container').masonry({
+
+    $grid = $('#masonry-container').masonry({
+        columnWidth: 275,
         itemSelector: '#masonry-container li'
     });
+
 }
 
 
@@ -18,10 +23,7 @@ function init() {
 
 }
 
-
-
 function start() {
-
 
     tcms.loadBoard("568ff7ee46a5b4c266c51ec7", initPortfolio);
 
