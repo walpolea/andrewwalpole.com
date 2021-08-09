@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../js/main.js"],
+  "sourcesContent": ["import \"../css/main.scss\";\n\n// let isSmall = false;\n// window.addEventListener(\"scroll\", () => {\n//   if (!isSmall && window.scrollY > 3) {\n//     isSmall = true;\n//     document.querySelector(\"header\").style.setProperty(\"--header-min-height\", \"25vh\");\n//   } else if (window.scrollY <= 3) {\n//     isSmall = false;\n//     document.querySelector(\"header\").style.setProperty(\"--header-min-height\", \"75vh\");\n//   }\n// });\n\nfunction updateScroll() {\n  document.documentElement.style.setProperty(\"--scrollY\", window.scrollY + \"px\");\n  // console.log(\"SCROLL: \", window.scrollY, document.documentElement.style.getPropertyValue(\"--scrollY\"));\n}\n\nwindow.addEventListener(\"scroll\", () => {\n  updateScroll();\n});\n\nupdateScroll();\n"],
+  "mappings": "MAaA,YAAwB,CACtB,SAAS,gBAAgB,MAAM,YAAY,YAAa,OAAO,QAAU,MAI3E,OAAO,iBAAiB,SAAU,IAAM,CACtC,MAGF",
+  "names": []
+}

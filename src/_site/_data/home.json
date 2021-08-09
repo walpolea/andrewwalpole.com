@@ -1,0 +1,63 @@
+{
+  "sections": [
+    {
+      "classes": "angled-bottom",
+      "content": {
+        "copy": "I’m a principal full-stack web developer with over 17 years of experience designing and building products and experiences for the web.",
+        "classes": "right-link",
+        "link": {
+          "title": "portfolio of work",
+          "copy": "Check out some of my work",
+          "link": "/work",
+          "isRemote": false
+        }
+      },
+      "background": "https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_141.png",
+      "divider": "https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_1.png"
+    },
+    {
+      "classes": "angled-both",
+      "content": {
+        "copy": "I’m a senior technical leader, with a passion for business strategy and growing successful, strong, and effective teams.",
+        "classes": "left-link",
+        "link": {
+          "title": "blog",
+          "copy": "Read my blog about dev &amp; leadership",
+          "link": "/blog",
+          "isRemote": false
+        }
+      },
+      "background": "https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_11.png",
+      "divider": "https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_141.png"
+    },
+    {
+      "classes": "angled-top",
+      "content": {
+        "copy": "I’m also an artist, teacher, entrepreneur, designer, maker, husband, dad, and striving-to-do-good-in-this-world human.",
+        "classes": "down-link",
+        "links": [
+          {
+            "title": "art.andrewwalpole.com",
+            "copy": "View my generative art",
+            "link": "https://art.andrewwalpole.com",
+            "isRemote": true
+          },
+          {
+            "title": "@walpolea on codepen",
+            "copy": "Latest Codepen Musings",
+            "link": "https://codepen.io/walpole",
+            "isRemote": true
+          },
+          {
+            "title": "Code Snippet Podcast",
+            "copy": "The Code Snippet Podcast",
+            "link": "https://anchor.fm/codesnippet",
+            "isRemote": true
+          }
+        ]
+      },
+      "background": "https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_2.png",
+      "divider": "https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_166.png"
+    }
+  ]
+}

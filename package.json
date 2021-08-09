@@ -1,0 +1,30 @@
+{
+  "name": "andrewwalpole.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "dev": "npm run watch:esbuild & npm run watch:eleventy",
+    "build": "npm run clean && npm run build:esbuild && eleventy",
+    "watch:eleventy": "eleventy --serve",
+    "watch:esbuild": "node esbuild.js --watch",
+    "build:esbuild": "node esbuild.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walpolea/andrewwalpole.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walpolea/andrewwalpole.com/issues"
+  },
+  "homepage": "https://github.com/walpolea/andrewwalpole.com#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "esbuild": "^0.12.17",
+    "esbuild-sass-plugin": "^1.4.8"
+  }
+}
