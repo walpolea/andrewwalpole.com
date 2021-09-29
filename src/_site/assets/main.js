@@ -1,2 +1,2 @@
-(()=>{function e(){document.documentElement.style.setProperty("--scrollY",window.scrollY+"px")}window.addEventListener("scroll",()=>{e()});e();})();
+(()=>{function s(){document.documentElement.style.setProperty("--scrollY",window.scrollY+"px")}window.addEventListener("scroll",()=>{s()});s();})();
 //# sourceMappingURL=main.js.map

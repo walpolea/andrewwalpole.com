@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -7,12 +9,13 @@
   --red: #eb3e45;
   --white: #e9e9e9;
   --black: #080808;
+  --off-white: #dddbd7;
 }
 
 body {
   background: var(--red);
   margin: 0;
-  font-family: georgia;
+  font-family: "Noto Serif", serif;
 }
 
 main {
@@ -72,7 +75,57 @@ header {
   }
 }
 
-nav {
+nav#main-navigation {
+  position: absolute;
+  left: 50%;
+  top: 10vh;
+  transform: translate(-50%, -50%);
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        --c: #1e0d3f;
+        --spc: 2px;
+        --spci: -2px;
+        display: inline-block;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: bold;
+        color: var(--white);
+        text-decoration: none;
+        text-shadow: var(--spc) var(--spc) 0 var(--c), var(--spci) var(--spci) 0 var(--c), var(--spc) 0px 0 var(--c), var(--spci) 0px 0 var(--c),
+          0px var(--spci) 0 var(--c), 0px var(--spc) 0 var(--c);
+
+        transition: text-shadow 0.5s;
+
+        &:hover {
+          --spc: 24px;
+          --spci: -16px;
+          --c: var(--red);
+        }
+      }
+      &:not(:last-of-type) {
+        margin-right: 50px;
+      }
+    }
+    @media (max-width: 660px) {
+      display: grid;
+      justify-content: center;
+
+      li:not(:last-of-type) {
+        margin-right: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+nav#social-links {
   align-self: end;
   justify-self: right;
   margin-top: 50px;
@@ -120,6 +173,12 @@ nav {
       }
     }
   }
+
+  @media (max-width: 360px) {
+    ul > li.navitem {
+      margin: 0 10px;
+    }
+  }
 }
 
 .divider-bg {
@@ -158,16 +217,16 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.15;
+    opacity: 0.05;
     z-index: -1;
     object-fit: cover;
 
-    transition: opacity 0.5s ease-out;
+    transition: opacity 0.3s ease-out;
   }
 
   &:hover {
     img.content-bg {
-      opacity: 0.1;
+      opacity: 0.12;
     }
   }
 
@@ -175,7 +234,7 @@ nav {
     justify-self: center;
     grid-column: 2 / -2;
     color: var(--white);
-    font-size: 26px;
+    font-size: 1.9rem;
     line-height: 1.4;
 
     position: relative;
@@ -299,11 +358,12 @@ nav {
     align-content: center;
     text-align: center;
     text-decoration: none;
+    font-size: 1.2rem;
     font-style: italic;
-    line-height: 1.3;
+    line-height: 1.5;
     padding: 20px;
     max-width: 140px;
-    transition: color 0.5s ease-in-out;
+    transition: color 0.3s ease-in-out;
     color: var(--red);
 
     &:hover {

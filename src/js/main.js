@@ -1,4 +1,5 @@
 import "../css/main.scss";
+import "../css/blog.scss";
 
 // let isSmall = false;
 // window.addEventListener("scroll", () => {

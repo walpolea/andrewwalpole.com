@@ -1,0 +1,22 @@
+//////////////// BLOG
+
+.blog {
+  background-color: var(--black);
+  padding: 1px;
+  position: relative;
+  z-index: 1;
+
+  .blog-container {
+    background-color: var(--off-white);
+    color: var(--black);
+
+    margin-block: 100px;
+    margin-inline: auto;
+    padding: 4vw 5.5vw;
+    width: 90%;
+    min-height: 100vh;
+    border-radius: 1vw;
+  }
+}
+
+////////////////
