@@ -4,7 +4,7 @@ tags:
   - post
   - web development
   - ideas
-title: The Web Needs Muscles
+title: The Thrill is Gone
 date: Created
 permalink: "blog/{{page.fileSlug}}/index.html"
 customHeader: "/static/muscles.png"
