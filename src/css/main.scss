@@ -23,11 +23,11 @@ main {
 }
 
 header {
+  --header-bg-image: url("https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_136.png");
   --header-min-height: max(25vh, calc(75vh - (var(--scrollY) * 4)));
 
   min-height: var(--header-min-height);
-  background-image: linear-gradient(to bottom, #00000000, #00000000 60%, #000000ff 100%),
-    url("https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_136.png");
+  background-image: linear-gradient(to bottom, #00000000, #00000000 60%, #000000ff 100%), var(--header-bg-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,6 +47,21 @@ header {
     }
   }
 
+  .header-title {
+    --c: #1e0d3f;
+    --spc: 2px;
+    --spci: -2px;
+    position: absolute;
+    left: 50%;
+    top: 28vh;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2rem, 2vw + 2rem, 5rem);
+    color: var(--white);
+    text-shadow: var(--spc) var(--spc) 0 var(--c), var(--spci) var(--spci) 0 var(--c), var(--spc) 0px 0 var(--c), var(--spci) 0px 0 var(--c),
+      0px var(--spci) 0 var(--c), 0px var(--spc) 0 var(--c);
+    text-align: center;
+  }
+
   .title {
     text-align: center;
     margin: 0 auto;
@@ -60,7 +75,7 @@ header {
 
     h1 {
       font-style: italic;
-      font-size: 3rem;
+      font-size: clamp(2rem, 1rem + 2vw, 3rem);
       color: var(--red);
       margin: 0;
     }
@@ -68,7 +83,7 @@ header {
     h2 {
       padding: 0 35px;
       font-weight: normal;
-      font-size: 1.2rem;
+      font-size: clamp(0.8rem, 0.5rem + 1vw, 1.2rem);
       line-height: 1.4;
       grid-row: 1 / 2;
     }
@@ -79,6 +94,9 @@ nav#main-navigation {
   position: absolute;
   left: 50%;
   top: 10vh;
+
+  // bottom: -20px;
+  // right: 20px;
   transform: translate(-50%, -50%);
 
   ul {
@@ -93,20 +111,21 @@ nav#main-navigation {
         --spc: 2px;
         --spci: -2px;
         display: inline-block;
-        font-size: 2rem;
+        font-size: clamp(1.4rem, 1vw + 1rem, 3rem);
         font-style: italic;
         font-weight: bold;
-        color: var(--white);
+        color: var(--red);
         text-decoration: none;
         text-shadow: var(--spc) var(--spc) 0 var(--c), var(--spci) var(--spci) 0 var(--c), var(--spc) 0px 0 var(--c), var(--spci) 0px 0 var(--c),
           0px var(--spci) 0 var(--c), 0px var(--spc) 0 var(--c);
 
-        transition: text-shadow 0.5s;
+        transition: text-shadow 0.5s, color 0.5s;
 
         &:hover {
           --spc: 24px;
           --spci: -16px;
           --c: var(--red);
+          color: var(--white);
         }
       }
       &:not(:last-of-type) {

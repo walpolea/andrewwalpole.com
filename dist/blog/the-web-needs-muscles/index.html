@@ -1,34 +1,46 @@
-{% if customHeader %}
-<header style="--header-bg-image:url('{{customHeader}}');">
-{% else %}
-<header>
-{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+    <link rel="prefetch" as="image" href="https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_136.png"/>
+    
+    <title>The Web Needs Muscles</title>
+    
+  </head>
+  <body>
+    <main>
+
+<header style="--header-bg-image:url('/static/muscles.png');">
+
     <div class="title">
       <h1>Andrew Walpole</h1>
       <h2>Principal Full-Stack Developer, Leader, Artist and Design Professional</h2>
     </div>
 
-    {%if headerTitle %}
-    <h1 class="header-title">{{title}}</h1>
-    {% endif %}
+    
+    <h1 class="header-title">The Web Needs Muscles</h1>
+    
 
     <nav id="main-navigation">
       <ul>
-        {% if page.url !== '/' %}
+        
         <li>
           <a href="/">HOME</a>
         </li>
-        {% endif %}
-        {% if page.url !== '/work/' %}
+        
+        
         <li>
           <a href="/work">WORK</a>
         </li>
-        {% endif %}
-        {% if page.url !== '/blog/' %}
+        
+        
         <li>
           <a href="/blog">BLOG</a>
         </li>
-        {% endif %}
+        
 
       </ul>
     </nav>
@@ -65,3 +77,30 @@
       </ul>
     </nav>
   </header>
+
+<section class="blog">
+  <section class="blog-container">
+    <p>September 29, 2021</p>
+<h1>The Web Needs Muscles</h1>
+<h2>Does it?</h2>
+<p>It's a strange idea, and that's enough to write about, so muse along.</p>
+<h2>Something, something person metaphor</h2>
+<p>How does it go? HTML is the skeleton, JavaScript is the brain and CSS is the skin. I guess that works ok when you don't give it too much thought.</p>
+<p><em>Shudders at giving it too much thought</em></p>
+<p>But where's the rest of the person? Well it's sort of strewn about. Muscles are kind of a big deal, where are they? They cover up the bones, so maybe they're a part of HTML, but they react via brain signals so theres some JavaScripty encroachment going on there, and really you can't give your skin all the credit for your devilishly good looks, it's only the outer layer, the cherry on top, of your gorgeous dev-bod.</p>
+<p>Ok, we did it, we thought about it too much and the metaphor broke down. Normally you hit that wall and move on. But let's not; not this time.</p>
+<h2>HTML, CSS, JavaScript and ... muscles.</h2>
+<p>I'm not saying that we need something that already exists, like templating languages, reactive frameworks or style libraries to be natively adopted into the browser. Those exist just fine as abstractions of our base languages and capabilities on the web.</p>
+<p>What I want to try to imagine is something that could remove some burdensome development use-case that currently we have to hook across all three browser languages to accomplish. What are the muscles?</p>
+<h2>What would a fourth language do?</h2>
+<p>I don't really know; we're just musing along here, I was really up-front about that. If you know, let's hear it! But maybe just for the sake of the metaphor let's keep going. I really do feel like HTML sort of has its purpose and then some. Beyond providing a base structure for your content, it acts as glue to unite JavaScript and CSS with the browser, it has hooks into the events system, and accessibility features, connects pages together, handles all sorts of user data input situations, so on and so forth.</p>
+<p>I think I can imagine, similarly to how CSS swooped in and took over styling and layout from HTML so many years ago, a dedicated language to describe, and handle – more succinctly and wholly – the actions/events and the effects they have upon the state of the content on the page. It's a bit of a fuzzy vision, but it feels like I find myself most bridging HTML, CSS and JavaScript when needing to deal with and react to events and maintain a ubiquitous understanding across layout, style and function the current state of the site. I mark my content to be found in HTML, I find the content in JavaScript or CSS, I hook into some user event and define some change I want to happen, sometimes a change that happens redundantly across all three technologies.</p>
+<p>A native API layer, maybe it does resemble some sort of reactive state object/library, but it sits at a level where HTML, CSS and JavaScript have equal and uninhibited direct access to it in order to stay in sync and create much simpler action/effect chains among the content, visual look and functionality of any website.</p>
+<p>To me, even as rough as it is, that sounds like a decent case for web muscles. I like it, and I'll continue to think on it. But if you agree or disagree, or have a clearer or different vision for a fourth web language I would love to hear about it. Until next time, I leave you with this idea, <em>you</em>, dear developer, are indeed the heart of the web.</p>
+
+  </section>
+</section>
+</main>
+    <script src="/assets/main.js"></script>
+  </body>
+</html>

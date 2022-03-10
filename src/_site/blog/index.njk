@@ -1,15 +1,30 @@
 ---
-layout: base.njk
+layout: blog_base.njk
 title: Andrew Walpole - Blog
 data: home
 ---
-<main>
-{% include "../_includes/header.njk" %}
 
-<section class="blog">
-  <section class="blog-container">
-    <h1>Nested Loops</h1>
-    <h2>A blog about technology, development and sometimes leadership.</h2>
-  </section>
-</section>
-</main>
+<ul class="blog-list" role="list" >
+{%- for post in collections.post -%}
+
+  <li class="blog-list-item">
+    <a href="{{post.url}}">
+      <img src="{{post.data.customHeader}}">
+      <article class="post-content">
+        <h2>{{post.data.title}}</h2>
+        <h3>{{post.date | readableDate}}</h3>
+      </article>
+    </a>
+  </li>
+
+  <li class="blog-list-item">
+    <a href="{{post.url}}">
+      <img src="{{post.data.customHeader}}">
+      <article class="post-content">
+        <h2>{{post.data.title}}</h2>
+        <h3>{{post.date | readableDate}}</h3>
+      </article>
+    </a>
+  </li>
+{%- endfor -%}
+</ul>

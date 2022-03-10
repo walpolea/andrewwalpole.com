@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Andrew Walpole Blog</title>
+  <subtitle>Long-winded musings about web development, leadership and other top-of-mind ramblings</subtitle>
+  <link href="https://andrewwalpole.com/feed.xml" rel="self"/>
+  <link href="https://andrewwalpole.com/"/>
+  <updated>2022-03-10T04:41:13Z</updated>
+  <id>https://andrewwalpole.com/</id>
+  <author>
+    <name>Andrew Walpole</name>
+    <email>andrew@andrewwalpole.com</email>
+  </author>
+</feed>

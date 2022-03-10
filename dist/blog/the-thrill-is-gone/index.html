@@ -1,34 +1,46 @@
-{% if customHeader %}
-<header style="--header-bg-image:url('{{customHeader}}');">
-{% else %}
-<header>
-{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+    <link rel="prefetch" as="image" href="https://andrewwalpole.s3-us-west-1.amazonaws.com/art/1600/art_1600_136.png"/>
+    
+    <title>The Web Needs Muscles</title>
+    
+  </head>
+  <body>
+    <main>
+
+<header style="--header-bg-image:url('/static/muscles.png');">
+
     <div class="title">
       <h1>Andrew Walpole</h1>
       <h2>Principal Full-Stack Developer, Leader, Artist and Design Professional</h2>
     </div>
 
-    {%if headerTitle %}
-    <h1 class="header-title">{{title}}</h1>
-    {% endif %}
+    
+    <h1 class="header-title">The Web Needs Muscles</h1>
+    
 
     <nav id="main-navigation">
       <ul>
-        {% if page.url !== '/' %}
+        
         <li>
           <a href="/">HOME</a>
         </li>
-        {% endif %}
-        {% if page.url !== '/work/' %}
+        
+        
         <li>
           <a href="/work">WORK</a>
         </li>
-        {% endif %}
-        {% if page.url !== '/blog/' %}
+        
+        
         <li>
           <a href="/blog">BLOG</a>
         </li>
-        {% endif %}
+        
 
       </ul>
     </nav>
@@ -65,3 +77,14 @@
       </ul>
     </nav>
   </header>
+
+<section class="blog">
+  <section class="blog-container">
+    <p>I did something interesting this evening. As lucky as I am to be a homeowner, it comes with its fair share of upkeep challenges. This evening I took to fixing a broken and stuck shower handle cartridge. I'll be honest, I love to tinker but I'm no handyman. I started out dumbfounded, worrying about the check I would have to cut to a plumber, and how long it would take to get someone out to take a look, and worst of all having to use the phone to talk to a stranger. But I googled, and googled some more. I first figured out</p>
+
+  </section>
+</section>
+</main>
+    <script src="/assets/main.js"></script>
+  </body>
+</html>
