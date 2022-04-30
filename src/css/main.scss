@@ -292,7 +292,7 @@ h3 {
   height:max(600px, 60vh);
   max-width:1480px;
   margin:auto;
-  padding-top:100px;
+  padding-top:max( 10vh, 50px);
 
   @media screen and (max-width:600px ) {
   height:max(400px, 50vh);

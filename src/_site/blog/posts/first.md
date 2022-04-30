@@ -19,7 +19,7 @@ This site is built with eleventy, with a custom esbuild setup for the small bits
 
 ### What can you expect from this blog?
 
-Well, probably just a decent bit of web-related punditry and maybe a bit of leadership stuff... Really whatever strikes my fancy I guess. My goal is to publish a healthy mix of useful tech-specific things along with my own views on the way the web development industry is moving, with some sprinkling in of random things I like. If that's your jam, welcome, feel free to like and [subscribe](https://andrewwalpole.com/feed.xml)!
+Well, probably just a decent bit of web-related punditry and maybe a bit of leadership stuff... Really whatever strikes my fancy I guess. My goal is to publish a healthy mix of useful tech-specific things along with my own views on the way the web development industry is moving, with some sprinkling in of random things I like. If that's your jam, welcome, feel free to like and [subscribe](/feed.xml)!
 
 More specifically these topics have a high chance of showing up:
 
