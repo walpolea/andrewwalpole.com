@@ -23,12 +23,13 @@
   },
   "homepage": "https://github.com/walpolea/andrewwalpole.com#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "esbuild": "^0.12.17",
     "esbuild-sass-plugin": "^1.4.8"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "eleventy-plugin-date": "^1.0.0"
   }
 }

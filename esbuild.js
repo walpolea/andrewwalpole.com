@@ -14,7 +14,7 @@ const args = Object.fromEntries(
     .filter((a) => a[0] && a[1])
 );
 
-const entries = ["src/js/main.js"];
+const entries = ["src/js/main.js", "src/js/themer.js"];
 const outDir = args["outDir"] ?? "./src/_site/assets";
 
 esbuild.build({

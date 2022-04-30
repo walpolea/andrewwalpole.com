@@ -1,12 +1,31 @@
----
-layout: base.njk
----
-<main>
-{% include "../_includes/header.njk" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>{{site.defaultTitle}}</title>
+    {% endif %}
 
-<section class="blog">
-  <section class="blog-container">
-    {{ content | safe }}
-  </section>
-</section>
-</main>
+  </head>
+  <body >
+    <main>
+{% include "../_includes/mini-header.njk" %}
+
+    <section class="blog" data-theme="peachtree">
+      <section class="blog-container">
+        {{ content | safe }}
+      </section>
+    </section>
+    
+{% include "../_includes/footer.njk" %}
+
+    </main>
+    <script src="/assets/themer.js"></script>
+  
+  </body>
+</html>

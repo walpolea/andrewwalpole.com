@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../js/themer.js"],
+  "sourcesContent": ["//Color changing sections\nconst themes = [\"eggplant\", \"watermelon\", \"yolk\", \"berry\", \"mintchip\", \"peachtree\", \"bloggy\"];\n\nconst themeObserver = new IntersectionObserver(\n  (entries, observer) => {\n    entries.forEach((entry) => {\n      if (entry.isIntersecting) {\n        document.documentElement.classList.remove(...themes);\n        document.documentElement.classList.add(entry.target.dataset.theme);\n      }\n    });\n  },\n  {\n    rootMargin: \"0px\",\n    threshold: [0.33, 0.66],\n  }\n);\n\ndocument.querySelectorAll(\"[data-theme]\").forEach((changer) => {\n  themeObserver.observe(changer);\n});\n"],
+  "mappings": "MACA,GAAM,GAAS,CAAC,WAAY,aAAc,OAAQ,QAAS,WAAY,YAAa,UAE9E,EAAgB,GAAI,sBACxB,CAAC,EAAS,IAAa,CACrB,EAAQ,QAAQ,AAAC,GAAU,CACzB,AAAI,EAAM,gBACR,UAAS,gBAAgB,UAAU,OAAO,GAAG,GAC7C,SAAS,gBAAgB,UAAU,IAAI,EAAM,OAAO,QAAQ,WAIlE,CACE,WAAY,MACZ,UAAW,CAAC,IAAM,OAItB,SAAS,iBAAiB,gBAAgB,QAAQ,AAAC,GAAY,CAC7D,EAAc,QAAQ",
+  "names": []
+}

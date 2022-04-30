@@ -1,5 +1,6 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginDate = require("eleventy-plugin-date");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginDate);
@@ -16,6 +17,11 @@ module.exports = function (eleventyConfig) {
   //copy over static files
   eleventyConfig.addPassthroughCopy({ "./src/static/": "static/" });
   eleventyConfig.addWatchTarget("./src/static/");
+
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+
+    eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {

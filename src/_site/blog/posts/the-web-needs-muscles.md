@@ -5,8 +5,9 @@ tags:
   - web development
   - ideas
 title: The Web Needs Muscles
-date: Created
+date: 2022-04-29
 permalink: "blog/{{page.fileSlug}}/index.html"
+url: "blog/{{page.fileSlug}}/index.html"
 customHeader: "/static/muscles.png"
 headerTitle: true
 ---
@@ -14,15 +15,7 @@ headerTitle: true
 {{page.date | readableDate}}
 # {{title}}
 
-## Does it?
-
-It's a strange idea, and that's enough to write about, so muse along.
-
-## Something, something person metaphor
-
 How does it go? HTML is the skeleton, JavaScript is the brain and CSS is the skin. I guess that works ok when you don't give it too much thought.
-
-*Shudders at giving it too much thought* 
 
 But where's the rest of the person? Well it's sort of strewn about. Muscles are kind of a big deal, where are they? They cover up the bones, so maybe they're a part of HTML, but they react via brain signals so theres some JavaScripty encroachment going on there, and really you can't give your skin all the credit for your devilishly good looks, it's only the outer layer, the cherry on top, of your gorgeous dev-bod.
 

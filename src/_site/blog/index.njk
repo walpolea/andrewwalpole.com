@@ -5,11 +5,10 @@ data: home
 ---
 
 <ul class="blog-list" role="list" >
-{%- for post in collections.post -%}
+{%- for post in collections.published -%}
 
   <li class="blog-list-item">
     <a href="{{post.url}}">
-      <img src="{{post.data.customHeader}}">
       <article class="post-content">
         <h2>{{post.data.title}}</h2>
         <h3>{{post.date | readableDate}}</h3>
@@ -17,14 +16,5 @@ data: home
     </a>
   </li>
 
-  <li class="blog-list-item">
-    <a href="{{post.url}}">
-      <img src="{{post.data.customHeader}}">
-      <article class="post-content">
-        <h2>{{post.data.title}}</h2>
-        <h3>{{post.date | readableDate}}</h3>
-      </article>
-    </a>
-  </li>
 {%- endfor -%}
 </ul>
