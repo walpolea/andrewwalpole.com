@@ -28,7 +28,7 @@ data: home
 
       <ul class="blog-list" role="list" >
       
-      {%- for post in collections.published -%}
+      {%- for post in collections.published | reverse -%}
         <li class="blog-list-item">
           <a href="{{post.url}}">
             <article class="post-content">
@@ -49,7 +49,7 @@ data: home
         <li>
         <h2>Coming sooner or later.</h2>
         </li>
-      {%- for post in collections.work -%}
+      {%- for post in collections.work | reverse -%}
         <li class="blog-list-item">
           <a href="{{post.url}}">
             <article class="post-content">

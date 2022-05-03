@@ -6,7 +6,7 @@ tags:
   - backend
   - serverless
 title: Living on the Edge Functions
-date: Created
+date: 2022-05-03
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
 customHeader: 

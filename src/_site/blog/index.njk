@@ -5,7 +5,7 @@ data: home
 ---
 
 <ul class="blog-list" role="list" >
-{%- for post in collections.published -%}
+{%- for post in collections.published | reverse -%}
 
   <li class="blog-list-item">
     <a href="{{post.url}}">
