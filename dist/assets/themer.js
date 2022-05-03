@@ -1,2 +1,0 @@
-(()=>{var r=["eggplant","watermelon","yolk","berry","mintchip","peachtree","bloggy"],o=new IntersectionObserver((e,s)=>{e.forEach(t=>{t.isIntersecting&&(document.documentElement.classList.remove(...r),document.documentElement.classList.add(t.target.dataset.theme))})},{rootMargin:"0px",threshold:[.33,.66]});document.querySelectorAll("[data-theme]").forEach(e=>{o.observe(e)});})();
-//# sourceMappingURL=themer.js.map

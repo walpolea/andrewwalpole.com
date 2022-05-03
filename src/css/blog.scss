@@ -108,6 +108,11 @@
 
   }
 
+  code {
+    padding-inline:5px;
+    background-color:var(--accent-color);
+  }
+
   pre {
     background-color:hsl(220,13%,18%);
     padding:20px ;
