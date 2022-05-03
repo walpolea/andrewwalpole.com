@@ -1,7 +1,10 @@
 ---
 layout: blog_base.njk
 tags: 
+  - published
   - post
+  - backend
+  - serverless
 title: Living on the Edge Functions
 date: Created
 permalink: "blog/{{page.fileSlug}}/index.html"
