@@ -171,6 +171,51 @@
   }
 
 
+ .likes {
+   
+
+  --likes: ;
+  --size: min( 3, calc( 1 + ( var(--likes) / 100) ) );
+
+  position:fixed;
+  right:max( 10px, 2vw );
+  bottom:10px;
+
+  transition: transform 0.4s ease;
+
+  transform: scale( var(--size) ) rotate3d( 1, 1, 1, 10deg);
+  transform-origin: bottom right;
+  max-width: max(50px, 5vw);
+
+
+  display:grid;
+  place-items:center;
+
+  > * {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  svg { 
+    width:100%;
+  }
+
+  p {
+    font-size: clamp( 12px, 7px + 0.66vw, 32px);
+    pointer-events: none;
+    position:relative;
+    top:-6px;
+    margin:0;
+  }
+
+  button {
+    border:none;
+    background:none;
+    cursor:pointer;
+  }
+ }
+
+
 
 }
 
@@ -620,47 +665,3 @@
    fill: transparent;
  }
  
-
- .likes {
-   
-
-  --likes: ;
-  --size: min( 3, calc( 1 + ( var(--likes) / 100) ) );
-
-  position:fixed;
-  right:max( 10px, 2vw );
-  bottom:10px;
-
-  transition: transform 0.4s ease;
-
-  transform: scale( var(--size) ) rotate3d( 1, 1, 1, 10deg);
-  transform-origin: bottom right;
-  max-width: max(50px, 5vw);
-
-
-  display:grid;
-  place-items:center;
-
-  > * {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-  }
-
-  svg { 
-    width:100%;
-  }
-
-  p {
-    font-size: clamp( 12px, 7px + 0.66vw, 32px);
-    pointer-events: none;
-    position:relative;
-    top:-6px;
-    margin:0;
-  }
-
-  button {
-    border:none;
-    background:none;
-    cursor:pointer;
-  }
- }
