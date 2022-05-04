@@ -27,6 +27,7 @@
           <p v-if="likes > 0">${likes}</p>
         </article>
       {% endif %}
+
       <section class="blog-container">
         {{ content | safe }}
       </section>
@@ -35,8 +36,6 @@
 {% include "../_includes/footer.njk" %}
 
     </main>
-    {# <script src="/assets/themer.js"></script> #}
-    {# <script type="module" src="/assets/likes.js"></script> #}
 
     <script type="module" src="/assets/main.js" defer></script>
   
