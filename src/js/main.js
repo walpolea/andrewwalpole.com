@@ -1,6 +1,7 @@
 import "../css/main.scss";
 import "../css/blog.scss";
-
+import "./themer.js";
+import "./likes.js";
 
 const track = document.querySelector(".h-track");
 

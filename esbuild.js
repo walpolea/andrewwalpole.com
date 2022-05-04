@@ -14,12 +14,12 @@ const args = Object.fromEntries(
     .filter((a) => a[0] && a[1])
 );
 
-const entries = ["src/js/main.js", "src/js/themer.js"];
+const entries = ["src/js/main.js"];
 const outDir = args["outDir"] ?? "./src/_site/assets";
 
 esbuild.build({
   entryPoints: entries,
-  // format: "iife",
+  format: "esm",
   bundle: true,
   minify: true,
   outdir: outDir,
