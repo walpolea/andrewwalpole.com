@@ -4,10 +4,10 @@ tags:
   - post
   - published
 title: First
+summary: "Hello World! This is my first post on amy new website and blog. Like and subscribe folks!"
 date: 2022-04-30
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
-customHeader: 
 ---
 
 {{page.date | readableDate}}
