@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="title" content="{{ title }}" />
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"/>
+    {% include 'head.njk' %}
     <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
-    {% if title %}
-    <title>{{ title }}</title>
-    {% else %}
-    <title>{{site.defaultTitle}}</title>
-    {% endif %}
   </head>
   <body data-scroll-locked>
     {{ content | safe }}

@@ -174,45 +174,67 @@
  .likes {
    
 
-  --likes: ;
-  --size: min( 3, calc( 1 + ( var(--likes) / 100) ) );
+  
 
   position:fixed;
   right:max( 10px, 2vw );
   bottom:10px;
 
-  transition: transform 0.4s ease;
-
-  transform: scale( var(--size) ) rotate3d( 1, 1, 1, 10deg);
-  transform-origin: bottom right;
+  
   max-width: max(50px, 5vw);
 
+  .like-button {
 
-  display:grid;
-  place-items:center;
+    --likes: ;
+    --size: min( 3, calc( 1 + ( var(--likes) / 100) ) );
 
-  > * {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    transition: transform 0.4s ease;
+
+    transform: scale( var(--size) ) rotate3d( 1, 1, 1, 10deg);
+    transform-origin: bottom right;
+    
+    display:grid;
+    place-items:center;
+
+    > * {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
+
+    svg { 
+      width:100%;
+    }
+
+    p {
+      font-size: clamp( 12px, 7px + 0.66vw, 32px);
+      pointer-events: none;
+      position:relative;
+      top:-6px;
+      margin:0;
+    }
+
+    button {
+      border:none;
+      background:none;
+      cursor:pointer;
+    }
+
+    &:hover {
+      animation: beat 0.3s infinite alternate; 
+    }
+    
+    @keyframes beat {
+      0% {
+        transform: scale( var(--size) ) rotate3d( 1, 1, 1, 10deg);
+      }
+      
+      100% {
+        transform:scale( calc( 1.1 * var(--size) ) ) rotate3d( 1, 1, 1, 15deg);
+      }
+    }
   }
 
-  svg { 
-    width:100%;
-  }
-
-  p {
-    font-size: clamp( 12px, 7px + 0.66vw, 32px);
-    pointer-events: none;
-    position:relative;
-    top:-6px;
-    margin:0;
-  }
-
-  button {
-    border:none;
-    background:none;
-    cursor:pointer;
-  }
+  
  }
 
 

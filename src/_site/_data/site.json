@@ -1,3 +1,5 @@
 {
-  "defaultTitle": "Andrew Walpole - Principal Web Developer"
+  "defaultTitle": "Andrew Walpole - Web Developer",
+  "defaultSummary": "The personal website of Andrew Walpole, a web developer and engineering manager based out of San Diego.",
+  "defaultImage": "https://andrewwalpole.com/static/andrewwalpole.png"
 }

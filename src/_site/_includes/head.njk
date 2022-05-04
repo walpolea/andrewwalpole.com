@@ -1,0 +1,11 @@
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="title" content="{{ title if title else site.defaultTitle }}" />
+<meta name="description" content="{{ summary if summary else site.defaultSummary }}" />
+<meta name="og:image" content="{{ featuredImage if featuredImage else site.defaultImage }}" />
+
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"/>
+<link rel="alternate" type="application/atom+xml" 
+  title="RSS Feed for andrewwalpole.com" 
+  href="/feed.xml" />
+<title>{{ title if title else site.defaultTitle }}</title>

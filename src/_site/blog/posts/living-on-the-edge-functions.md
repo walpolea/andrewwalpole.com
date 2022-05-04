@@ -3,9 +3,11 @@ layout: blog_base.njk
 tags: 
   - published
   - post
+  - web
   - backend
   - serverless
 title: Living on the Edge Functions
+summary: "Let's get a surface-level view of edge functions: what they are, what they're good for, and how you can get started with them"
 date: 2022-05-03
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
@@ -53,8 +55,8 @@ Remember, edge functions run after the client/user makes a request (that you hav
 - Add/modify a header value (great for Auth things).
 - Read/Write/Manage cookies.
 - Completely compile, render and return a page or component with injected data/content.
-- Add some html or a js script into the page.
-- Response with some JSON like an API endpoint.
+- Inject some HTML or a JS script into the page.
+- Respond with some JSON like an API endpoint.
 - Enforce a block or allow-list.
 - Respond with an a/b test of content.
 - Respond with an image or other types of content.
