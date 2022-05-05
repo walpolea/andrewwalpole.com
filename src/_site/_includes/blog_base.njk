@@ -16,6 +16,13 @@
 
       <section class="blog-container">
         {{ content | safe }}
+
+        {% if tags %}
+          <hr>
+          <a href="/blog">read more articles</a>
+        {% endif %}
+
+
       </section>
     </section>
     

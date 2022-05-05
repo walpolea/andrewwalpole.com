@@ -152,7 +152,7 @@
   hr {
     border:none;
     border-bottom:10px solid var(--accent-color);
-    margin-block:1rem 2rem;
+    margin-block:2rem;
   }
 
   blockquote {
@@ -167,6 +167,20 @@
       --font-size-to: 28;
       font-style:italic;
       font-weight:700;
+    }
+  }
+
+  img {
+    --width: 100%;
+    width:var(--width);
+    display:block;
+
+    &.centered {
+      margin-inline:auto;
+    }
+
+    &.half {
+      --width:50%;
     }
   }
 
