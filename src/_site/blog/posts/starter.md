@@ -7,7 +7,7 @@ summary: Some words here
 date: Created
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
-
+hide: true
 ---
 
 {{page.date | readableDate}}

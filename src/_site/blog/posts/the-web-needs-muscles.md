@@ -8,8 +8,8 @@ title: The Web Needs Muscles
 date: 2022-04-29
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
-customHeader: "/static/muscles.png"
-headerTitle: true
+hide: true
+
 ---
 
 {{page.date | readableDate}}

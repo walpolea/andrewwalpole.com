@@ -6,7 +6,7 @@ title: The main title
 date: Created
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
-customHeader: 
+hide: true
 ---
 
 {{page.date | readableDate}}

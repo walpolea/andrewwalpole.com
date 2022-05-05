@@ -18,10 +18,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/static/": "static/" });
   eleventyConfig.addWatchTarget("./src/static/");
 
+  eleventyConfig.addPassthroughCopy("./src/_site/robots.txt");
+
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
 
-    eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {
