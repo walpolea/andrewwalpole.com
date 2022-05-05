@@ -6,8 +6,11 @@
   margin-top: 50px;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
+
+  justify-content:center;
+  align-items:end;
 
   @media (max-width:1200px ) {
     grid-template-columns: repeat(3, 1fr);
@@ -34,7 +37,13 @@
           letter-spacing:1;
         }
 
-        h3,
+        h3 {
+          --font-size-from: 18;
+          --font-size-to: 32;
+
+        }
+
+
         h4 {
           --font-size-from: 14;
           --font-size-to: 22;

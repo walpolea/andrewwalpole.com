@@ -6,13 +6,14 @@ featuredImage: "https://andrewwalpole.com/static/andrewwalpole2.png"
 ---
 
 <ul class="blog-list" role="list" >
+  <li><h2>Blog</h2></li>
 {%- for post in collections.published | reverse -%}
 
   <li class="blog-list-item">
     <a href="{{post.url}}">
       <article class="post-content">
-        <h2>{{post.data.title}}</h2>
-        <h3>{{post.date | readableDate}}</h3>
+        <h3>{{post.data.title}}</h3>
+        <h4>{{post.date | readableDate}}</h4>
       </article>
     </a>
   </li>
