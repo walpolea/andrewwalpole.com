@@ -27,6 +27,7 @@ layout: base.njk
       <ul class="blog-list" role="list" >
       
       {%- for post in collections.published | reverse -%}
+        {% if loop.index0 < 4 %}
         <li class="blog-list-item">
           <a href="{{post.url}}">
             <article class="post-content">
@@ -34,7 +35,8 @@ layout: base.njk
               <h4>{{post.date | readableDate}}</h4>
             </article>
           </a>
-        </li>        
+        </li>
+        {% endif %}        
       {%- endfor -%}
       </ul>
       </div>
