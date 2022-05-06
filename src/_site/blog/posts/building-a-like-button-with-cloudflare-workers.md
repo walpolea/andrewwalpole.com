@@ -11,6 +11,7 @@ summary: Cloudflare Workers (Edge Functions) and their specialized KV product ar
 date: 2022-05-06
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
+featuredImage: "https://andrewwalpole.com/static/cf-like-btn/cf-like-button.png"
 ---
 
 {{page.date | readableDate}}
