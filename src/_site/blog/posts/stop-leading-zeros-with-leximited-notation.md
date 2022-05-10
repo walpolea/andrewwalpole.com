@@ -8,6 +8,7 @@ summary: Ever hit the issue where you want numbered items to alphabetically orde
 date: 2022-05-10
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
+featuredImage: "https://andrewwalpole.com/static/leximited-notation.png"
 ---
 
 {{page.date | readableDate}}
