@@ -22,15 +22,15 @@ It's useful to take just a few minutes to think about a situation – it might 
 
 There's a core practice in Design Thinking that is really all about mindset. If you're unfamiliar with Design Thinking in general, I can't recommend enough, [Stephen Gates' 3-episode podcast series](https://thecrazy1.com/episode-33-design-thinking-part-1-overview-and-inspiration-phase/) on his process of it. Even though I may not carry out the entire process on a regular basis, it is full of concepts that can be broken out into a lot of everyday tasks.
 
-For this post, I want to focus in quickly on one of those concepts of having a divergant or convergant mindset.
+For this post, I want to focus in quickly on one of those concepts of having a divergent or convergent mindset.
 
 ### Diverge,
 
-When you first are looking to generate ideas or tap into creativity, you should put yourself in a divergant mindset. This means that the boundaries – your limits, constraints, tethers – are all not allowed to be a part of the session. You are able to place the problem in an open, safe space and examine it from all possible perspectives that you can think up. The goal is more to explore the landscape of the problem, and uncover many possible paths, even those that may dead-end, than it is to find *the* path.
+When you first are looking to generate ideas or tap into creativity, you should put yourself in a divergent mindset. This means that the boundaries – your limits, constraints, tethers – are all not allowed to be a part of the session. You are able to place the problem in an open, safe space and examine it from all possible perspectives that you can think up. The goal is more to explore the landscape of the problem, and uncover many possible paths, even those that may dead-end, than it is to find *the* path.
 
 ### Converge,
 
-Separate from that divergant, blue-sky session, comes a time to be critical with all you've uncovered. Why won't these things work? What are the risks, efforts, technical debts to take on in this idea? convergant thinking is about focusing a broad blurry vision into a clearer picture. You see the wrinkles and cracks take shape, as well as the beauty and elegance of the ideas that end up being worthy of further effort.
+Separate from that divergent, blue-sky session, comes a time to be critical with all you've uncovered. Why won't these things work? What are the risks, efforts, technical debts to take on in this idea? convergent thinking is about focusing a broad blurry vision into a clearer picture. You see the wrinkles and cracks take shape, as well as the beauty and elegance of the ideas that end up being worthy of further effort.
 
 ### and Repeat
 
