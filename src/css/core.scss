@@ -510,3 +510,24 @@ footer {
     justify-self:center;
   }
 }
+
+
+.filterbox {
+
+  border:2px solid var(--fg-color);
+  border-radius:20px;
+  padding:6px 15px;
+  margin:8px;
+
+  display:inline-block;
+  user-select: none;
+  text-align: center;
+
+  input {
+    display:none;
+  }
+
+  &.checked {
+    background: var(--accent-color);
+  }
+}

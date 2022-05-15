@@ -4,19 +4,55 @@ title: Andrew Walpole - Blog
 summary: "The blog of Andrew Walpole. Come along with me on a journey of ramblings and musings, and perhaps maybe a smidge of web development or business and leadership knowledge."
 featuredImage: "https://andrewwalpole.com/static/andrewwalpole2.png"
 ---
+<script>
+const blogData = {
+  "posts": [
+    {%- for post in collections.published | reverse -%}
+      {
+        "title": "{{ post.data.title | safe}}",
+        "date": "{{post.date | readableDate}}",
+        "url": "{{ post.url }}",
+        "tags": JSON.parse('{{ post.data.tags | dump | safe}}'),
+      }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}
+</script>
+<div v-scope="blog(blogData)" @vue:mounted="mounted">
+  <template v-if="initialized">
+    <div>
+    <label class="filterbox" v-for="cat in allCategories" :class="{checked:chosenCategories.includes(cat)}">
+      <input  type="checkbox" v-model="chosenCategories" :value="cat">
+      [{cat}]
+    </label>
+    <ul v-else class="blog-list" role="list" >
+      <li><h2>Blog</h2></li>
+      <li class="blog-list-item" v-for="post in filteredPosts">
+        <a href="[{post.url}]">
+          <article class="post-content">
+            <h3>[{post.title}]</h3>
+            <h4>[{post.date}]</h4>
+          </article>
+        </a>
+      </li>
+  </ul>
+  </div>
+  </template>
+  <ul v-else class="blog-list" role="list" >
+    <li><h2>Blog</h2></li>
+  {%- for post in collections.published | reverse -%}
 
-<ul class="blog-list" role="list" >
-  <li><h2>Blog</h2></li>
-{%- for post in collections.published | reverse -%}
+    <li class="blog-list-item">
+      <a href="{{post.url}}">
+        <article class="post-content">
+          <h3>{{post.data.title}}</h3>
+          <h4>{{post.date | readableDate}}</h4>
+        </article>
+      </a>
+    </li>
 
-  <li class="blog-list-item">
-    <a href="{{post.url}}">
-      <article class="post-content">
-        <h3>{{post.data.title}}</h3>
-        <h4>{{post.date | readableDate}}</h4>
-      </article>
-    </a>
-  </li>
+  {%- endfor -%}
+  </ul>
 
-{%- endfor -%}
-</ul>
+</div>
+

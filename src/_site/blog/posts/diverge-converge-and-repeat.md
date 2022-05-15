@@ -4,7 +4,7 @@ tags:
   - post
   - published
   - leadership
-  - advice
+  - insights
 title: Diverge, Converge, and Repeat
 summary: Divergent and convergent mindsets play a critical role in how I think of ideas and uncover solutions to problems. Here's a bit about why they're so useful to me.
 date: 2022-05-13

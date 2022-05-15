@@ -4,7 +4,7 @@ tags:
   - post
   - published
   - leadership
-  - advice
+  - insights
 title: Throw the dart
 summary: 
 date: 2022-05-05

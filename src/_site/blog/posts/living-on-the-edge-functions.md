@@ -4,7 +4,7 @@ tags:
   - published
   - post
   - web
-  - backend
+  - back-end
   - serverless
 title: Living on the Edge Functions
 summary: "Let's get a surface-level view of edge functions: what they are, what they're good for, and how you can get started with them"

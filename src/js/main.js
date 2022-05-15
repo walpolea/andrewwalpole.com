@@ -2,7 +2,12 @@ import "../css/main.scss";
 import "../css/blog.scss";
 
 import "./themer.js";
-import "./likes.js";
+import { createApp } from 'https://unpkg.com/petite-vue?module';
+
+import {likes} from "./likes.js";
+import {blog} from "./blog-filter.js";
+
+createApp({likes, blog, $delimiters: ['[{', '}]']}).mount();
 
 const track = document.querySelector(".h-track");
 

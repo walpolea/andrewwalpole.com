@@ -3,7 +3,7 @@ layout: blog_base.njk
 tags: 
   - post
   - published
-  - backend
+  - back-end
   - serverless
   - web
 title: Building a Like Button with Cloudflare Workers
