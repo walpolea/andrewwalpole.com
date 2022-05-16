@@ -10,7 +10,6 @@ summary: If you had to build a website right now, get started right away, what w
 date: 2022-05-16
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
-hide: true
 ---
 
 {{page.date | readableDate}}
