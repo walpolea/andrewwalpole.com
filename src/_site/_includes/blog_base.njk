@@ -15,6 +15,9 @@
       {% endif %}
 
       <section class="blog-container">
+        {% if tags %}
+          <a href="/blog">back to blog</a>
+        {% endif %}
         {{ content | safe }}
 
         {% if tags %}
