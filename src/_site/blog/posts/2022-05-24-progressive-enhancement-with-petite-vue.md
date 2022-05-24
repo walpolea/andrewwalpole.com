@@ -2,6 +2,7 @@
 layout: blog_base.njk
 tags: 
   - post
+  - published
   - petite-vue
   - front-end
 title: Progressive Enhancement with Petite-vue
