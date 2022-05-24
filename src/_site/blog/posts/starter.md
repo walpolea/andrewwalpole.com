@@ -8,6 +8,8 @@ date: Created
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
 hide: true
+featuredImage: "https://andrewwalpole.com/static/NAME.png"
+
 ---
 
 {{page.date | readableDate}}
