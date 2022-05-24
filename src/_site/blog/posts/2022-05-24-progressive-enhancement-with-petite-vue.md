@@ -150,5 +150,5 @@ It's a little more work, but in a lot of production cases, I find this pattern t
 
 - Put your enhanced petite-vue markup in a `<template v-if="initialized">`
 - Put your static content in a sibling `<div v-else>` tag
-- Also render out a `<script>` tag that defines the data petite-vue needs to render its own version os the content.
+- Also render out a `<script>` tag that defines the data petite-vue needs to render its own version of the content.
 - Set initialized to `true` when petite-vue mounts, this will hide the static content and show the enhanced content.
