@@ -6,7 +6,7 @@ tags:
   - front-end
 title: Progressive Enhancement with Petite-vue
 summary: Rather than having to completely rely on the client to render your content when you want to make it interactive or functional, progressively enhance it with petite-vue.
-date: Created
+date: 2022-05-24
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
 featuredImage: "https://andrewwalpole.com/static/progressive-enhancement-with-petite-vue.png"
