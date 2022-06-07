@@ -156,6 +156,10 @@
     background-color:hsl(220,13%,18%);
     padding:20px ;
     border-radius:10px;
+
+    code {
+      padding-inline:unset;
+    }
   }
 
   ul, ol {

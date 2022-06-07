@@ -20,7 +20,7 @@ In 2019 I made a ten episode podcast series called [Code Snippet](https://anchor
 
 > Do it for context.
 
-*Context informs the shape of the lens with which we perceive things*, it is the key to understanding with confidence.
+*Context informs the shape of the lens with which we perceive things*; it is the key to understanding with confidence.
 
 I had no further expectations other than to learn how to make a podcast, and in hindsight, this was an amazingly wonderful reason to get started.
 
