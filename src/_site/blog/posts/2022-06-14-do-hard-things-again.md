@@ -6,7 +6,7 @@ tags:
   - insights
 title: Do Hard Things Again
 summary: It feels really great to get over a hard hurdle. But don't stop there, do it again.
-date: 2020-06-14
+date: 2022-06-14
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
 featuredImage: "https://andrewwalpole.com/static/do-hard-things-again.png"
