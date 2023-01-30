@@ -27,7 +27,7 @@ I've spent the last handful of years building lots of websites for company brand
 
 You might be thinking, "But Wordpress is free!"
 
-Sure, the software and often some of the most critical plugins and themes are free or even quite affordable. If you're content is your main focus for your new site, go ahead and grab a nice theme and have fun. I'm specifically talking about you, dear future-someone's-client, about your future-new custom website that showcases your brand and products/services, setting your business apart form your competition.
+Sure, the software and often some of the most critical plugins and themes are free or even quite affordable. If your content is your main focus for your new site, go ahead and grab a nice theme and have fun. I'm specifically talking about you, dear future-someone's-client, about your future-new custom website that showcases your brand and products/services, setting your business apart from your competition.
 
 Wordpress ends up being expensive in three ways:
 
