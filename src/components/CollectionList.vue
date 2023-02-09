@@ -16,6 +16,7 @@
 </template>
 
 <script setup>
+
   import { ref, computed, onMounted } from "vue";
   import CollectionListItem from "./CollectionListItem.vue";
 
@@ -61,7 +62,7 @@ ul {
 
   border:2px solid var(--fg-color);
   border-radius:20px;
-  padding:6px 15px;
+  padding:2px 15px 4px 15px;
   margin:4px;
 
   display:inline-block;
@@ -69,8 +70,13 @@ ul {
   text-align: center;
   font-size: var(--fs--2);
 
+  label {
+    font-size: var(--fs--2);
+  }
+
   input {
     display:none;
+    margin:0;
   }
 
   &:has(label.checked) {

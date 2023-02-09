@@ -25,7 +25,6 @@ const formattedPublishDate = formatDate( entry.data.date );
     text-decoration: none;
 
     &:hover, &:active, &:focus {
-      // text-decoration: underline;
       background-color:var(--bg-alt);
     }
   }
@@ -39,6 +38,7 @@ const formattedPublishDate = formatDate( entry.data.date );
 
   .title-link {
     font-size: var(--fs-2);
+    line-height: 1.1;
     align-self: start;
   }
 
