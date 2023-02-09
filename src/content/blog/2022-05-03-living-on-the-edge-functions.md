@@ -8,6 +8,7 @@ tags:
 title: Living on the Edge Functions
 slug: living-on-the-edge-functions
 summary: "Let's get a surface-level view of edge functions: what they are, what they're good for, and how you can get started with them"
+blogcast: https://pinecast.com/listen/a0b07a20-2989-44f7-b14c-89f3ddb3bb8e.mp3
 date: 2022-05-03
 ---
 
