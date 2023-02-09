@@ -1,0 +1,18 @@
+<script is:inline>
+  window.darkMode = localStorage.getItem('color-theme') ?? "false";
+  window.setDarkMode = ( mode ) => {
+    mode = mode.toString();
+    window.darkMode = mode;
+    localStorage.setItem('color-theme', mode);
+
+    if( mode === "true" ) {
+      document.documentElement.classList.add('dark-mode');
+      document.documentElement.style.colorScheme = 'dark';
+    } else {
+      document.documentElement.classList.remove('dark-mode');
+      document.documentElement.style.colorScheme = 'light';
+    }
+  }
+
+  window.setDarkMode( window.darkMode );
+</script>

@@ -1,0 +1,17 @@
+$sm: 550px;
+$md: 800px;
+$lg: 1100px;
+$xl: 1680px;
+
+
+@mixin above($size){
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin below($size){
+  @media screen and (max-width: calc($size - 1px)) {
+    @content;
+  }
+}

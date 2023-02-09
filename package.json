@@ -1,35 +1,25 @@
 {
-  "name": "andrewwalpole.com",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "clean": "rm -rf dist",
-    "dev": "npm run watch:esbuild & npm run watch:eleventy",
-    "build": "npm run clean && npm run build:esbuild && eleventy",
-    "watch:eleventy": "eleventy --serve",
-    "watch:esbuild": "node esbuild.js --watch",
-    "build:esbuild": "node esbuild.js"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/walpolea/andrewwalpole.com.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/walpolea/andrewwalpole.com/issues"
-  },
-  "homepage": "https://github.com/walpolea/andrewwalpole.com#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "esbuild": "^0.12.17",
-    "esbuild-sass-plugin": "^1.4.8"
+    "@astrojs/rss": "^2.1.0",
+    "@astrojs/vue": "^2.0.1",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "astro": "^2.0.2",
+    "markdown-it": "^13.0.1",
+    "sanitize-html": "^2.9.0",
+    "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.1.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "eleventy-plugin-date": "^1.0.0"
+    "sass": "^1.58.0"
   }
 }

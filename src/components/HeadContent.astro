@@ -1,0 +1,41 @@
+---
+import DarkModeInitializer from "./DarkModeInitializer.astro";
+
+const baseurl = "https://andrewwalpole.com"
+
+const {
+  title,
+  summary,
+  featuredImage,
+  path
+} = Astro.props;
+
+
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="title" content={title} />
+  <meta name="description" content={summary} />
+  <meta name="og:title" content={title} />
+  <meta name="og:description" content={summary} />
+  <meta name="og:image" content={featuredImage} />
+  <meta property="og:url" content={baseurl + path} />
+
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={summary}>
+  <meta name="twitter:image" content={featuredImage}>
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for andrewwalpole.com" href="/feed.xml" />
+
+  <title>{title}</title>
+
+  <DarkModeInitializer />
+</head>

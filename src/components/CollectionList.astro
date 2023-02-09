@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import CollectionList from './CollectionList.vue';
+
+const {collection = 'blog'} = Astro.props
+
+const allPosts = await getCollection(collection);
+allPosts.reverse();
+
+const { limit = Infinity, filter = ['published'], interactive = false} = Astro.props;
+const filteredLimitedOrderedPosts = allPosts.filter(post => post.data.tags?.some( tag => filter.includes(tag) ) ).slice(0, limit);
+
+---
+
+{ interactive ?
+  <CollectionList posts={allPosts} client:visible /> :
+  <CollectionList posts={filteredLimitedOrderedPosts} />
+}
+
+<style lang="scss">
+
+</style>

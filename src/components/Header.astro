@@ -1,0 +1,73 @@
+---
+
+const { size = '' } = Astro.props;
+
+const TitleTag = Astro.url.pathname === '/' ? 'h1' : 'h2';
+---
+
+<header class:list={["header", size]}>
+  
+    <TitleTag class="title-name"><a class="h1" href="/">Andrew<br>Walpole</a></TitleTag>
+    <h2 class="sub-title">Principal&nbsp;Web<br>Developer&nbsp;&<br>Engineering<br>Manager</h2>
+    <h2 class="underlay">Designer<br>Leader<br>Teacher<br>Learner<br>Maker</h2>
+  
+</header>
+
+
+<style lang="scss">
+
+  @use '../styles/mixins' as mq;
+
+
+  .header {
+
+    display: grid;
+
+    .title-name {
+
+      margin-block-end: var(--sp-4);
+
+      a {
+        text-decoration: none;
+        font-style: italic;
+        
+      }
+    }
+
+    .sub-title, .underlay {
+      max-width: max(50%, 1000px);
+      grid-row-start: 2;
+      grid-column-start: 1;
+      line-height:2ch;
+
+      margin-block:2rem -40px;
+
+      @include mq.below( mq.$sm ) {
+        font-size: var(--fs-4);
+      }
+
+    }
+
+    .underlay {
+      opacity:0.5;
+      color: var(--accent-color);
+      grid-row-start: 2;
+      grid-column-start: 1;
+      z-index: -1;
+      position: relative;
+      top: -1ch;
+    }
+
+    &.mini {
+      .title-name, .title-name a {
+        margin-block-end: var(--sp-1);
+        font-size: var(--fs-4);
+        line-height: var(--fs-4);
+      }
+
+      .sub-title, .underlay {
+        font-size: var(--fs-3);
+      }
+    }
+  }
+</style>

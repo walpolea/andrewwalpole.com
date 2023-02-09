@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Raleway:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+
+:root {
+
+  --c-peach: #DDAC83;
+  --c-sand: #F1E5D1;
+  --c-soil: #4E3A26;
+  --c-pond: #2D4E61;
+  --c-night: #1a1919;
+  --c-light: #fafafa;
+
+  --bg-color: var(--c-sand);
+  --bg-alt: var(--c-peach);
+
+  --fg-color: var(--c-night);
+  --fg-alt: var(--c-soil);
+
+  --accent-color: var(--c-peach);
+  --accent-alt: var(--c-pond);
+
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --sp-5: clamp(20px, 10px + 2vw, 40px);
+  --sp-6: clamp(24px, 2px + 2vw, 48px);
+  --sp-7: clamp( 28px, 14px + 2vw, 56px);
+  --sp-8: clamp(32px, 16px + 2vw, 64px);
+  --sp-9: clamp( 36px, 18px + 2vw, 72px);
+  --sp-10: clamp( 40px, 20px + 2vw, 80px);
+  --sp-11: clamp(44px, 22px + 2vw, 88px);
+  --sp-12: clamp(48px, 24px + 2vw, 96px);
+  --sp-default: var(--sp-4);
+
+  --ff-sans: "Raleway", sans-serif;
+  --ff-serif: "Playfair Display", serif;
+
+  --fs--2: clamp(0.76rem, calc(0.82rem + 0.23vw), 1.15rem);
+  --fs--1: clamp(1.04rem, calc(0.97rem + 0.36vw), 1.40rem);
+  --fs-0: clamp(1.25rem, calc(1.15rem + 0.50vw), 1.75rem);
+  --fs-1: clamp(1.50rem, calc(1.36rem + 0.69vw), 2.19rem);
+  --fs-2: clamp(1.80rem, calc(1.61rem + 0.93vw), 2.73rem);
+  --fs-3: clamp(2.16rem, calc(1.91rem + 1.26vw), 3.42rem);
+  --fs-4: clamp(2.59rem, calc(2.26rem + 1.68vw), 4.27rem);
+  --fs-5: clamp(3.11rem, calc(2.66rem + 2.23vw), 5.34rem);
+  --fs-6: clamp(3.73rem, calc(3.14rem + 2.94vw), 6.68rem);
+  --fs-7: clamp(4.48rem, calc(3.71rem + 3.87vw), 8.34rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark-mode {
+
+  --bg-color: var(--c-night);
+  --bg-alt: var(--c-soil);
+
+  --fg-color: var(--c-sand);
+  --fg-alt: var(--c-peach);
+
+  --accent-color: var(--c-pond);
+  --accent-alt: var(--c-soil);
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size:var(--fs-0);
+  line-height: 1.25;
+
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+
+  transition: background-color 0.5s, color 0.5s;
+  
+
+  
+}
+
+main {
+  --gap: clamp(1rem, 6vw, 3rem);
+  --full: minmax(var(--gap), 1fr );
+  --feature: minmax(0, 290px);
+  --content: minmax(0, 150px);
+  --narrow: min(800px, 100% - var(--gap) * 2);
+
+  width:100%;
+  display: grid;
+  grid-template-columns:
+    [full-start] var(--full)
+    [feature-start] var(--feature)
+    [content-start] var(--content)
+    [narrow-start] var(--narrow) [narrow-end]
+    var(--content) [content-end]
+    var(--feature) [feature-end]
+    var(--full) [full-end];
+
+    > * { grid-column: content; }
+    .narrow { grid-column: narrow; }
+    .content { grid-column: content; }
+    .feature { grid-column: feature; }
+    .full { grid-column: full; }
+    .left-feature { grid-column: feature-start / narrow-end; }
+    .right-feature { grid-column: narrow-start / feature-end; }
+    .left-content { grid-column: content-start / narrow-end; }
+    .right-content { grid-column: narrow-start / content-end; }
+    
+}
+
+.centered {
+  text-align: center;
+  display:grid;
+  justify-content: center;
+}
+
+a {
+  color:var(--fg-color);
+  font-weight:bold;
+}
+
+p,span {
+  font-size:var(--fs-0);
+  line-height: 1.55;
+
+  transition: color 0.5s;
+
+  &.large {
+    font-size: var(--fs-1);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin-block: 1rem;
+  transition: color 0.5s;
+  line-height:1.1;
+
+}
+
+h1, .h1 {
+  font-weight: 400;
+  font-size:var(--fs-7);
+  line-height:0.85;
+}
+
+h2, .h2 {
+  font-size:var(--fs-6);
+  margin-block: 2rem;
+
+  font-style: normal;
+  font-weight: 900;
+}
+
+h3, .h3 {
+  font-size:var(--fs-5);
+  margin-block: 1rem;
+}
+
+h4, .h4 {
+  font-size:var(--fs-4);
+}
+
+h5, .h5 {
+  font-size:var(--fs-3);
+}
+
+h6, .h6 {
+  font-size:var(--fs-2);
+}
+
+
+.invisible-scrollbar {
+  scrollbar-width: none;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+a.link {
+  text-decoration: none;
+
+  &:hover, &:active, &:focus {
+    text-decoration:underline;
+  }
+}
