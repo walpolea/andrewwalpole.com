@@ -9,7 +9,7 @@
       </ul>
     </div>
     <ul class="collection-list">
-      <li v-for="post in filteredPosts">
+      <li v-for="post in filteredPosts" key="post.id">
         <CollectionListItem :entry="post" />
       </li>
     </ul>
