@@ -20,7 +20,8 @@ export function get(context) {
       link: `/blog/${post.slug}/`,
       content: sanitizeHtml(parser.render(post.body)),
       ...post.data,
-      author:`andrew@andrewwalpole.com (Andrew Walpole)`
+      author:`andrew@andrewwalpole.com (Andrew Walpole)`,
+      customData: post.data.blogcast ? `<enclosure url="${post.data.blogcast}" type="audio/mp3" />`:''
     })),
     customData: `<language>en-us</language>`,
   });
