@@ -13,7 +13,7 @@ const {url} = Astro.props;
     slot="media"
     src={url}
     ></audio>
-    <media-control-bar>
+    <media-control-bar style="width:100%;">
       <media-play-button></media-play-button>
       <media-time-range></media-time-range>
       <media-playback-rate-button></media-playback-rate-button>
@@ -22,20 +22,20 @@ const {url} = Astro.props;
       <media-volume-range></media-volume-range>
     </media-control-bar>
   </media-controller>
-  <p>Listen along to this post as you read or <a href="https://pinecast.com/feed/andrew-walpole-blogcast">subscribe to the blogcast</a></p>
+  <p>Listen along to this post as you read, or <a href="https://pinecast.com/feed/andrew-walpole-blogcast">subscribe to the blogcast</a></p>
 
 </div>
 
 <script>
   import 'media-chrome';
 
-  const hideBtn = document.querySelector('.hide-btn');
+  // const hideBtn = document.querySelector('.hide-btn');
 
-  if( !!hideBtn) {
-    hideBtn.addEventListener( 'click', () => {
-      document.querySelector('.blogcast-player').classList.toggle('hidden');
-    });
-  }
+  // if( !!hideBtn) {
+  //   hideBtn.addEventListener( 'click', () => {
+  //     document.querySelector('.blogcast-player').classList.toggle('hidden');
+  //   });
+  // }
 
   
 </script>
@@ -79,6 +79,10 @@ const {url} = Astro.props;
       @include mq.below( mq.$md ) {
         padding-right:20%;
       }
+    }
+
+    audio {
+      width:100%;
     }
 
     button.hide-btn {
