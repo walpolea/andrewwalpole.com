@@ -5,9 +5,9 @@ const {url} = Astro.props;
 ---
 
 <div class="blogcast-player" >
-  <button class="hide-btn">
+  <!-- <button class="hide-btn">
     <span>hide</span>
-  </button>
+  </button> -->
   <media-controller audio>
     <audio
     slot="media"
@@ -46,27 +46,39 @@ const {url} = Astro.props;
 
 
   .blogcast-player {
+    z-index:2;
     text-align:center;
-    // width:350px;
-    width:min-content;
+    
+    width:100%;
     transition: transform .5s;
     transform: translateX(0%);
     position:relative;
 
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:10px;
+
     @include mq.below( mq.$sm ) {
-      width:calc( 100% - 25px );
+      grid-template-columns: 1fr;
     }
 
     position:fixed;
     bottom:0px;
     left:0px;
     background-color: var(--bg-alt);
-    padding:15px 15px 20px 15px;
+    padding:10px;
 
     p {
       font-size: var(--fs--2);
-      margin-bottom:0;
+      margin:0;
       line-height:1.1;
+      text-align:left;
+      padding-right:100px;
+
+      @include mq.below( mq.$md ) {
+        padding-right:20%;
+      }
     }
 
     button.hide-btn {
@@ -106,7 +118,12 @@ const {url} = Astro.props;
   }
 
   media-controller {
-    color: var(--bg-color);
+
+    ::slotted(media-control-bar) {
+      width:100%;
+      color: var(--bg-color);
+    }
+    
     --media-control-background: var(--fg-color);
     --media-control-hover-background: var(--accent-alt);
     --media-icon-color: var(--bg-color);
