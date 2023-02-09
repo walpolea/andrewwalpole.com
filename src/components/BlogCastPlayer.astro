@@ -1,0 +1,118 @@
+---
+
+const {url} = Astro.props;
+
+---
+
+<div class="blogcast-player" >
+  <button class="hide-btn">
+    <span>hide</span>
+  </button>
+  <media-controller audio>
+    <audio
+    slot="media"
+    src={url}
+    ></audio>
+    <media-control-bar>
+      <media-play-button></media-play-button>
+      <media-mute-button></media-mute-button>
+      <media-volume-range></media-volume-range>
+      <media-playback-rate-button></media-playback-rate-button>
+      <media-time-display show-duration></media-time-display>
+    </media-control-bar>
+  </media-controller>
+  <p>Listen along to this post as you read or <a href="https://pinecast.com/feed/andrew-walpole-blogcast">subscribe to the blogcast</a></p>
+
+</div>
+
+<script>
+  import 'media-chrome';
+
+  const hideBtn = document.querySelector('.hide-btn');
+
+  if( !!hideBtn) {
+    hideBtn.addEventListener( 'click', () => {
+      document.querySelector('.blogcast-player').classList.toggle('hidden');
+    });
+  }
+
+  
+</script>
+
+<style lang="scss">
+
+@use '../styles/mixins' as mq;
+
+
+  .blogcast-player {
+    text-align:center;
+    // width:350px;
+    width:min-content;
+    transition: transform .5s;
+    transform: translateX(0%);
+    position:relative;
+
+    @include mq.below( mq.$sm ) {
+      width:calc( 100% - 25px );
+    }
+
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    background-color: var(--bg-alt);
+    padding:15px 15px 20px 15px;
+
+    p {
+      font-size: var(--fs--2);
+      margin-bottom:0;
+      line-height:1.1;
+    }
+
+    button.hide-btn {
+      width:25px;
+      height:100%;
+      position:absolute;
+      right:-25px;
+      top:0;
+      border:none;
+      background-color: var(--fg-alt);
+      border-radius:0 5px 0 0;
+
+      display:grid;
+      place-items: center;
+
+      cursor:pointer;
+
+      &::before {
+        content:"||";
+        display:block;
+        color: var(--bg-color);
+        padding-inline:2px 2px;
+      }
+
+      span {
+        display:none;
+      }
+    }
+
+    &.hidden {
+      transform: translateX(-100%);
+
+      @include mq.below( mq.$sm ) {
+        transform: translateX( calc( -10px + -100% ));
+      }
+    }
+  }
+
+  media-controller {
+    color: var(--bg-color);
+    --media-control-background: var(--fg-color);
+    --media-control-hover-background: var(--accent-alt);
+    --media-icon-color: var(--bg-color);
+    --media-range-thumb-background: var(--bg-alt);
+    --media-range-track-background: var(--fg-alt);
+    --media-range-bar-color: var(--bg-color);
+  }
+
+  
+</style>

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 
 import { getCollection } from 'astro:content';
 import PageSection from '../../components/PageSection.astro';
+import BlogCastPlayer from '../../components/BlogCastPlayer.astro';
 
 export async function getStaticPaths() {
   const blogPosts = await getCollection('blog');
@@ -21,6 +22,7 @@ const { Content } = await post.render();
 ---
 <Layout title={post.data.title} heroSize="mini" summary={post.data.summary} featuredImage={post.data.featuredImage}>
   <PageSection class="blog content">
+    { post?.data?.blogcast && <BlogCastPlayer url={post.data.blogcast}></BlogCastPlayer> }
     <Content />
     <div class="likes" v-scope={`likes({ title:'${post.data.slug}' })`}></div>
   </PageSection>
