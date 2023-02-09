@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageSection from '../components/PageSection.astro';
+import BlogList from '../components/BlogList.astro';
+---
+<Layout title="Andrew Walpole - Blog" heroSize="mini" summary="Ramblings about what I know and what I think I know.">
+  <PageSection class="blog feature">
+    <h1 class="blog-title">Blog</h1>
+    <h2 class="h6 blog-sub-title">Ramblings about what I know and what I think I know.</h2>
+    <BlogList interactive={true} />
+  </PageSection>
+</Layout>
+
+<style lang="scss">
+
+  .blog-title {
+    font-size:var(--fs-5);
+    line-height:1.1;
+    position:relative;
+    font-weight:bold;
+
+    &::before {
+      content:'';
+      width:8%;
+      aspect-ratio:1;
+      background-color:var(--accent-color);
+      position:absolute;
+      top:-15%;
+      left:-2.5%;
+      z-index:-1;
+    }
+  }
+  .blog-sub-title {
+    max-width: min( 70%, 650px);
+    font-style: italic;
+  }
+
+  
+</style>

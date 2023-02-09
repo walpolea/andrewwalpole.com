@@ -1,0 +1,30 @@
+---
+
+const { id, noTopMargin = false, noBottomMargin = false, class: inheritedClasses } = Astro.props;
+
+---
+<section id="{id}" class:list={['page-section', inheritedClasses, {'no-top-margin':noTopMargin, 'no-bottom-margin':noBottomMargin}]}>
+  <slot/>
+</section>
+
+<style lang="scss">
+
+  .page-section {
+    --mb: var(--sp-12);
+
+    margin-top: var(--mb);
+    margin-bottom: var(--mb);
+
+    &.no-top-margin {
+      margin-top:0;
+    }
+
+    &.no-bottom-margin {
+      margin-bottom:0;
+    }
+
+    // @include mq.below( mq.$sm ) {
+    //   --mb: var(--sp-5);
+    // }
+  }
+</style>

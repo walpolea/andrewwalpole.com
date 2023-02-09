@@ -1,3 +1,4 @@
+import { createApp } from 'https://unpkg.com/petite-vue?module';
 
 const likes = ({title}) => {
 
@@ -41,6 +42,8 @@ const likes = ({title}) => {
     }
   }
 }
+
+createApp({likes, $delimiters: ['[{', '}]']}).mount();
 
 
 export {

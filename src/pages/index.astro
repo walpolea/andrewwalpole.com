@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageSection from '../components/PageSection.astro';
+import SiteContent from '../components/SiteContent.astro';
+import CollectionList from '../components/CollectionList.astro';
+---
+<Layout title="Andrew Walpole - Web Developer">
+	<PageSection id="about">
+		<SiteContent slug="about" />
+	</PageSection>
+	<PageSection id="latest-blogs" class="feature">
+		<h3 class="h4">Latest Blog Posts</h3>
+		<CollectionList limit={4} />
+		<a href="/blog" class="centered">See All Posts</a>
+	</PageSection>
+	<PageSection id="latest-blogs" class="feature">
+		<h3 class="h4">Featured Work</h3>
+		<CollectionList collection="work" limit={4} />
+		<a href="/work" class="centered">See All Work</a>
+	</PageSection>
+</Layout>
+
+<style lang="scss">
+	
+</style>

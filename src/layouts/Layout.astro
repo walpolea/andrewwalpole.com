@@ -1,0 +1,35 @@
+---
+
+import '../styles/main.scss';
+
+import ColorToggle from '../components/ColorToggle.vue';
+import Footer from '../components/Footer.astro';
+import HeadContent from '../components/HeadContent.astro';
+import Hero from '../components/Hero.astro';
+
+const baseurl = "https://andrewwalpole.com"
+
+const {
+  title = "Andrew Walpole",
+  summary = "Principal Web Developer and Engineering Manager",
+  featuredImage = baseurl + "/static/andrewwalpole.jpg",
+  path = "/",
+	heroSize = '',
+} = Astro.props;
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<HeadContent {title} {summary} {featuredImage} path={Astro.url.pathname} />
+	<body>
+		<ColorToggle client:visible />
+		<main>
+			<Hero size={heroSize}></Hero>
+			<slot />
+			<Footer />
+		</main>
+	</body>
+</html>
+
