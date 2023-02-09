@@ -40,7 +40,7 @@ const year = new Date().getFullYear();
         </div>
         <div class="bg"></div>
       </div>
-      <div class="preview-area"></div>
+      <div class="preview-area" data-slug={post.data.slug}></div>
     </div>
 
   </PageSection>
@@ -49,13 +49,19 @@ const year = new Date().getFullYear();
 <script>
   import html2canvas from "html2canvas";
 
+  const featuredImage = document.querySelector('.featured-image') as HTMLElement;
+  const previewArea = document.querySelector('.preview-area') as HTMLElement;
+
   saveDown();
   setTimeout( ()=> {
     saveDown();
-    document.querySelector('.featured-image').style.display = "none";
-    document.querySelector('.preview-area').style.display = "block";
+    featuredImage.style.display = "none";
+    previewArea.style.display = "block";
   }, 500 );
 
+  previewArea.addEventListener( 'dblclick', () => {
+    download();
+  })
 
   function saveDown() {
     const containerToRender = document.querySelector('.image-container') as HTMLElement;
@@ -73,6 +79,14 @@ const year = new Date().getFullYear();
       previewArea.innerHTML = "";
       previewArea.appendChild(canvas);
     });
+  }
+
+  function download() {
+    const canvas = document.querySelector('.preview-area canvas') as HTMLCanvasElement;
+    const link = document.createElement('a');
+    link.setAttribute('download', `${previewArea.dataset.slug}.png`);
+    link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+    link.click();
   }
 
 </script>

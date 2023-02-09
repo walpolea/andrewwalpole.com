@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import PageSection from '../../components/PageSection.astro';
-import Hero from '../../components/Hero.astro';
 
 const allPosts = (await Promise.all( [getCollection('blog'), getCollection('work')] )).flat();
 allPosts.reverse();
