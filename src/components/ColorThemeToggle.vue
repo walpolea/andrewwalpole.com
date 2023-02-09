@@ -8,14 +8,14 @@
 
 import { ref, watch, onMounted } from "vue"
 
-const colorMode = ref(  false );
+const colorMode = ref(false);
 
 onMounted( () => {
-  colorMode.value = window.darkMode;
+  colorMode.value = window.colorTheme === "dark";
 });
 
 watch(colorMode, (newValue) => {
-  window.setDarkMode(newValue);
+  window.setDarkMode( newValue ? "dark" : "light");
 });
 
 </script>

@@ -2,7 +2,7 @@
 
 import '../styles/main.scss';
 
-import ColorToggle from '../components/ColorToggle.vue';
+import ColorThemeToggle from '../components/ColorThemeToggle.vue';
 import Footer from '../components/Footer.astro';
 import HeadContent from '../components/HeadContent.astro';
 import Hero from '../components/Hero.astro';
@@ -24,7 +24,7 @@ const {
 
 	<HeadContent {title} {summary} {featuredImage} path={Astro.url.pathname} />
 	<body>
-		<ColorToggle client:visible />
+		<ColorThemeToggle client:visible />
 		<main>
 			<Hero size={heroSize}></Hero>
 			<slot />
