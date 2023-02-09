@@ -1,0 +1,31 @@
+---
+
+import '../styles/main.scss';
+
+import ColorThemeToggle from '../components/ColorThemeToggle.vue';
+import HeadContent from '../components/HeadContent.astro';
+
+const baseurl = "https://andrewwalpole.com"
+
+const {
+  title = "Andrew Walpole",
+  summary = "Principal Web Developer and Engineering Manager",
+  featuredImage = baseurl + "/static/andrewwalpole.jpg",
+  path = "/",
+	heroSize = '',
+} = Astro.props;
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<HeadContent {title} {summary} {featuredImage} path={Astro.url.pathname} />
+	<body>
+		<ColorThemeToggle client:visible />
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
+

@@ -6,6 +6,7 @@ tags:
   - leadership
   - insights
 title: Throw the dart
+slug: throw-the-dart
 summary: "Don't get stuck for too long thinking about, just go ahead and throw it."
 date: 2022-05-05
 ---

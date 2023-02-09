@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import PageSection from '../../components/PageSection.astro';
+import Hero from '../../components/Hero.astro';
+
+const allPosts = (await Promise.all( [getCollection('blog'), getCollection('work')] )).flat();
+allPosts.reverse();
+---
+<Layout title="Preview Image Generator" heroSize="mini">
+  <PageSection class="blog">
+    
+    <h1>Preview Images</h1>
+    <ul>
+      { allPosts.map( post => {
+        return (
+          <li>
+            <a href={`/preview/${post.data.slug}`}>{post.data.title}</a>
+            </li>
+            )
+          })}
+    </ul>
+  </PageSection>
+</Layout>
+
+<style lang="scss">
+
+  ul {
+    padding:0;
+    margin-block:4rem;
+  }
+  li {
+    margin-bottom:10px;
+  }
+</style>
