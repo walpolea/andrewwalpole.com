@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageSection from '../components/PageSection.astro';
+import CollectionList from '../components/CollectionList.astro';
+---
+<Layout title="Andrew Walpole - Work" heroSize="mini">
+  <PageSection class="work feature">
+    <h1 class="title">Work</h1>
+    <h2 class="h6 sub-title">A selection of projects that showcase some of my skills.</h2>
+    <CollectionList collection="work" interactive={true} />
+  </PageSection>
+</Layout>
+
+<style lang="scss">
+
+  .title {
+    font-size:var(--fs-5);
+    line-height:1.1;
+    position:relative;
+    font-weight:bold;
+
+    &::before {
+      content:'';
+      width:8%;
+      aspect-ratio:1;
+      background-color:var(--accent-color);
+      position:absolute;
+      top:-15%;
+      left:-2.5%;
+      z-index:-1;
+    }
+  }
+  .sub-title {
+    max-width: min( 70%, 650px);
+    font-style: italic;
+  }
+
+  
+</style>
