@@ -1,9 +1,8 @@
 ---
 import BlankLayout from '../../layouts/BlankLayout.astro';
-
-import { getCollection } from 'astro:content';
 import PageSection from '../../components/PageSection.astro';
 
+import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const allPosts = await Promise.all( [getCollection('blog'), getCollection('work')] );

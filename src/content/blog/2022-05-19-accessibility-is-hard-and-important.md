@@ -10,7 +10,6 @@ summary: Two things about web accessibility that we need to stop letting hold us
 date: 2022-05-19
 permalink: "blog/{{page.fileSlug}}/index.html"
 url: "blog/{{page.fileSlug}}/index.html"
-featuredImage: "https://andrewwalpole.com/static/blog/accessibility-is-hard-and-important.png"
 ---
 
 

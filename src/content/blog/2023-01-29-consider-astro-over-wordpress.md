@@ -12,7 +12,7 @@ title: Consider Astro over WordPress for your Brand's Website
 slug: consider-astro-over-wordpress
 summary: Are you a company looking to build a new website? As someone who built company websites for many years, I think you should consider not going with another WordPress site.
 date: 2023-01-29
-featuredImage: "https://andrewwalpole.com/static/blog/consider-astro-over-wordpress-for-your-brands-website.png"
+blogcast: "https://pub-40fccf9e493a4d029eb2b8955f358ac3.r2.dev/consider-astro-for-your-brands-website.mp3"
 
 ---
 

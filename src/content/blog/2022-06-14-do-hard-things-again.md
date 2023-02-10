@@ -8,8 +8,6 @@ title: Do Hard Things Again
 slug: do-hard-things-again
 summary: It feels really great to get over a hard hurdle. But don't stop there, do it again.
 date: 2022-06-14
-featuredImage: "https://andrewwalpole.com/static/blog/do-hard-things-again.png"
-
 ---
 
 

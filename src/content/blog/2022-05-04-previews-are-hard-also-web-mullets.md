@@ -9,7 +9,6 @@ title: Previews Are Hard! Also, Web Mullets
 slug: previews-are-hard-also-web-mullets
 summary: "A quick take on one of Jamstack's biggest hurdles it has yet to fully overcome: previewing content."
 date: 2022-05-04
-featuredImage: "https://andrewwalpole.com/static/blog/spiderman-points-for-previews.jpg"
 ---
 
 

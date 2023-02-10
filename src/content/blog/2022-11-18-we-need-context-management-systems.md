@@ -7,8 +7,6 @@ title: We Need Context Management Systems
 slug: we-need-context-management-systems
 summary: Applying context to websites often lives tied to content, or tied to the front end, or split into both. Here I propose building a new contextual layer separate from both.
 date: 2022-11-18
-featuredImage: "https://andrewwalpole.com/static/blog/we-need-context-management-systems.png"
-
 ---
 
 

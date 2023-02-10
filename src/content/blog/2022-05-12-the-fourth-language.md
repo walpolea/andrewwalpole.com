@@ -3,7 +3,6 @@ title: The Fourth Language
 slug: the-fourth-language
 summary: Have you ever thought about the web having a fourth major, native language? Here are a few of my thoughts on it.
 date: 2022-05-12
-featuredImage: "https://andrewwalpole.com/static/blog/perfect-wires.jpg"
 ---
 
 # The Fourth Language

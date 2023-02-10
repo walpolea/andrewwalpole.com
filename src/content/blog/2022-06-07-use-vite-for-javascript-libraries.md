@@ -6,7 +6,6 @@ title: Use Vite for JavaScript Libraries
 slug: use-vite-for-javascript-libraries
 summary: More than once I've written some snazzy JavaScript code that I want to quickly turn into a sharable library, but the process of how to easily do that has bogged me down enough to drop the idea entirely. Here's a look at using vite to quickly publish your code as a JavaScript Library.
 date: 2022-06-07
-featuredImage: "https://andrewwalpole.com/static/blog/use-vite-for-javascript-libraries.png"
 ---
 
 

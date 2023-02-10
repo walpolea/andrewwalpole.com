@@ -19,8 +19,10 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await post.render();
 
+const featuredImage = `https://andrewwalpole.com/static/${post.data.slug}.png`;
+
 ---
-<Layout title={post.data.title} heroSize="mini" summary={post.data.summary} featuredImage={post.data.featuredImage}>
+<Layout title={post.data.title} heroSize="mini" summary={post.data.summary} featuredImage={featuredImage}>
   <PageSection class="blog content">
     { post?.data?.blogcast && <BlogCastPlayer url={post.data.blogcast}></BlogCastPlayer> }
     <Content />

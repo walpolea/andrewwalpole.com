@@ -10,7 +10,6 @@ title: Building a Like Button with Cloudflare Workers
 slug: building-a-like-button-with-cloudflare-workers
 summary: Cloudflare Workers (Edge Functions) and their specialized KV product are the perfect tool to create a quick little API with persistent state.
 date: 2022-05-06
-featuredImage: "https://andrewwalpole.com/static/blog/cf-like-btn/cf-like-button.png"
 ---
 
 

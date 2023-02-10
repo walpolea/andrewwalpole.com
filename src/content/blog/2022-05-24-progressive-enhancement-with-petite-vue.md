@@ -8,8 +8,6 @@ title: Progressive Enhancement with Petite-vue
 slug: progressive-enhancement-with-petite-vue
 summary: Rather than having to completely rely on the client to render your content when you want to make it interactive or functional, progressively enhance it with petite-vue.
 date: 2022-05-24
-featuredImage: "https://andrewwalpole.com/static/blog/progressive-enhancement-with-petite-vue.png"
-
 ---
 
 

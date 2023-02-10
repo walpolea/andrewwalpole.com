@@ -8,7 +8,6 @@ title: Work is a Place to Help People
 slug: work-is-a-place-to-help-people
 summary: Reframing how you think about work toward a perspective of helping the folks around you can spread positive change at multiple levels. 
 date: 2022-05-20
-featuredImage: "https://andrewwalpole.com/static/blog/work-is-a-place-to-help-people.png"
 ---
 
 

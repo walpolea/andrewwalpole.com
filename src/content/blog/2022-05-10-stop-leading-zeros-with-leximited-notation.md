@@ -8,7 +8,6 @@ title: Stop Leading Zeros with Leximited Notation
 slug: stop-leading-zeros-with-leximited-notation
 summary: Ever hit the issue where you want numbered items to alphabetically order themselves numerically, so you lead them with zeros, which works until you have more digits than zeros. Leximited notation solves this issue, and then some!
 date: 2022-05-10
-featuredImage: "https://andrewwalpole.com/static/blog/leximited-notation.png"
 ---
 
 

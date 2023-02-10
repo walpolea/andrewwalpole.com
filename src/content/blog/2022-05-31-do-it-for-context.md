@@ -7,8 +7,6 @@ title: Do it for Context
 slug: do-it-for-context
 summary: Sometimes you need that little extra spark to go down a new pathway or face the unknown. When you're grasping for that push, do it for context.
 date: 2022-05-31
-hide: true
-featuredImage: "https://andrewwalpole.com/static/blog/do-it-for-context.png"
 ---
 
 

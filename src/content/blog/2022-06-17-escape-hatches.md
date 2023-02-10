@@ -8,8 +8,6 @@ title: Escape Hatches
 slug: escape-hatches
 summary: Third-party frameworks and systems abstract away complexity, but often at the cost of flexibility. Escape hatches can be a great way to bring flexibility back without compromising features.
 date: 2022-06-17
-featuredImage: "https://andrewwalpole.com/static/blog/escape-hatches.png"
-
 ---
 
 # Escape Hatches

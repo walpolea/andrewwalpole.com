@@ -8,8 +8,6 @@ title: Blog Post Image Generator with HTML2Canvas
 slug: blog-post-image-generator-with-html2canvas
 summary: Here's a practical look at using html2canvas to generate images for blog posts. You might be looking at said image right now!
 date: 2022-05-29
-featuredImage: "https://andrewwalpole.com/static/blog/blog-post-image-generator-with-html2canvas.png"
-
 ---
 
 

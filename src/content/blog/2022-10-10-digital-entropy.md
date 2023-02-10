@@ -8,8 +8,6 @@ title: Digital Entropy
 slug: digital-entropy
 summary: What eats at our code? A quick explorative rambling of why we have to maintain and invest in all code and digital systems.
 date: 2022-10-10
-featuredImage: "https://andrewwalpole.com/static/blog/digital-entropy.png"
-
 ---
 
 
