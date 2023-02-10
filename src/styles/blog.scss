@@ -1,3 +1,6 @@
+@use './mixins' as mq;
+
+
 .blog, .work {
 
   p + :is(h1, h2, h3 ) {
@@ -34,6 +37,12 @@
       top:0%;
       left:-2.5%;
       z-index:-1;
+    }
+  }
+
+  @include mq.below( mq.$sm ) {
+    h1 {
+      margin-block-start:0rem;
     }
   }
 
