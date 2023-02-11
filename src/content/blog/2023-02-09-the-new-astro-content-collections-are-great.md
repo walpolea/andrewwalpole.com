@@ -7,7 +7,7 @@ tags:
 title: The New Astro Content Collections are Great
 slug: the-new-astro-content-collections-are-great
 summary: Astro 2.0 just landed, and with it some great new features including Content Collections. Let's have a look!
-date: 2023-02-10
+date: 2023-02-09
 blogcast: "https://pub-40fccf9e493a4d029eb2b8955f358ac3.r2.dev/the-new-astro-content-collections-are-great.mp3"
 ---
 
