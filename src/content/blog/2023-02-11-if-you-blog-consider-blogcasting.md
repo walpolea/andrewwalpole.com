@@ -81,4 +81,4 @@ Most RSS readers are happy to pick this up and display a playable interface.
 
 ## Will you give it a shot?
 
-What do you think? Is this an appealing idea? Have you tried it out on this post? I'd love to hear your feedback, whether it's just dropping a like in the lower right (sorry RSS folks), or replying to my [tweet](https://twitter.com/walpolea) or [toot](https://mastodon.online/@walpolea) sharing this post. I myself am looking forward to Blogcasts sweeping the nation!
+What do you think? Is this an appealing idea? Have you tried it out on this post? I'd love to hear your feedback, whether it's just dropping a like in the lower right (sorry RSS folks), or replying to my [tweet](https://twitter.com/walpolea/status/1624206212937191424?s=20&t=yuD8VWXotnPgkJSKT6JGPQ) or [toot](https://mastodon.online/@walpolea/109843310354666047) sharing this post. I myself am looking forward to Blogcasts sweeping the nation!
