@@ -54,15 +54,15 @@
 
 }
 
-ul {
+ul.filter-list {
   padding:0;
 }
 
 .filterbox {
 
   border:2px solid var(--fg-color);
-  border-radius:20px;
-  padding:2px 15px 4px 15px;
+  border-radius:40px;
+  padding:0px 10px 2px 10px;
   margin:4px;
 
   display:inline-block;
