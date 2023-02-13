@@ -8,6 +8,7 @@ title: Build Momentum for the Next Thing
 slug: build-momentum-for-the-next-thing
 summary: A lot of focus remains on success and failure as traits of progress, but I've learned that it's really momentum that you should keep your eye on.
 date: 2022-07-13
+blogcast: https://pub-40fccf9e493a4d029eb2b8955f358ac3.r2.dev/build-momentum-for-the-next-thing.mp3
 ---
 
 
