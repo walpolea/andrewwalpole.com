@@ -6,7 +6,7 @@ tags:
   - leadership
 title: Lead Great Engineering Manager One-on-ones
 slug: lead-great-engineering-manager-one-on-ones
-summary: After years of honing my leadership style, I've landed on a one-on-one format that I quite like. Here's deep dive into it.
+summary: After years of honing my leadership style, I've landed on a one-on-one format that I quite like. Here's a deep dive into it.
 date: 2023-02-13 12:00:00
 blogcast: "https://pub-40fccf9e493a4d029eb2b8955f358ac3.r2.dev/lead-great-engineering-manager-one-on-ones.mp3"
 ---
