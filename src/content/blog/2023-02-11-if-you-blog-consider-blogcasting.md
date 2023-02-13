@@ -7,7 +7,7 @@ tags:
 title: If You Blog, Consider Blogcasting
 slug: if-you-blog-consider-blogcasting
 summary: As someone who has been wanting to do a podcast but not having time for it. Blogcasting seems like a great middle-ground solution.
-date: 2023-02-11
+date: 2023-02-11 12:00:00
 blogcast: "https://pub-40fccf9e493a4d029eb2b8955f358ac3.r2.dev/if-you-blog-consider-blogcasting.mp3"
 ---
 
