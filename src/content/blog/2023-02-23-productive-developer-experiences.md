@@ -18,7 +18,7 @@ There has been another shift in the last few years, though not as overtaking; mo
 
 Here are my top features that I think drive productive developer experiences:
 
-### A well-groomed happy-path
+### A well-groomed happy path
 
 The experience to get up and running with anything is a make-or-break moment for new users. Too difficult and we'll "nope!" right out of there. Lesser-considered though, too magical or left unexplained, and the smarter users might also begin to build a case for being skeptical. Your happy path should be well-groomed, like an upkept hiking trail. It should have bridges in the rough spots and not wind to and fro too much.
 
