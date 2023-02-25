@@ -7,7 +7,7 @@ tags:
 title: Always Be Expecting
 slug: always-be-expecting
 summary: Let's look at how expectations can be used as an explicit device to improve work and working relationships.
-date: 2023-02-24 12:00:00
+date: 2023-02-25 12:00:00
 blogcast: "https://pub-40fccf9e493a4d029eb2b8955f358ac3.r2.dev/always-be-expecting.mp3"
 ---
 
