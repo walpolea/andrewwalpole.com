@@ -6,6 +6,7 @@ import ColorThemeToggle from '../components/ColorThemeToggle.vue';
 import Footer from '../components/Footer.astro';
 import HeadContent from '../components/HeadContent.astro';
 import Hero from '../components/Hero.astro';
+import PageReader from '../components/PageReader.vue';
 
 const baseurl = "https://andrewwalpole.com"
 
@@ -16,6 +17,8 @@ const {
   path = "/",
 	heroSize = '',
 } = Astro.props;
+
+console.log( { Astro })
 
 ---
 
@@ -29,6 +32,7 @@ const {
 			<Hero size={heroSize}></Hero>
 			<slot />
 			<Footer />
+			<PageReader title={Astro.url.pathname} client:visible></PageReader>
 		</main>
 	</body>
 </html>
