@@ -7,7 +7,7 @@ tags:
   - web
 title: Audit Content Reads with Cloudflare KV
 slug: audit-content-reads-with-cloudflare-kv
-summary: Let's look at how expectations can be used as an explicit device to improve work and working relationships.
+summary: A quick write up on how Astro made it very easy to track page reads in Cloudflare KV.
 date: 2023-02-27 12:00:00
 blogcast: "https://pub-40fccf9e493a4d029eb2b8955f358ac3.r2.dev/audit-content-reads-with-cloudflare-kv.mp3"
 ---
