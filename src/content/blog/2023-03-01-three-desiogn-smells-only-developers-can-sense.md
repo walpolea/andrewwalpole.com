@@ -1,6 +1,7 @@
 ---
-tags: 
+tags:
   - post
+  - published
   - insights
   - web
   - front-end
