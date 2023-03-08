@@ -26,16 +26,19 @@
 
   onMounted( () => {
     interactive.value = true;
+    // console.log( posts );
+    posts.forEach( p => p.data.tags?.includes('published') === false ? console.log({data: p.data}) : null );
   });
 
   const allCategories = Array.from( new Set( posts.map( p=>p.data.tags).flat().filter( c => c && c !== "post" && c !== "published") ) );
+
   
   const filteredPosts = computed( () => {
     if(chosenCategories.value.length === 0) {
-      return posts;
+      return posts.filter( p => p.data.tags?.includes('published') );
     }
 
-    return posts.filter( p => p.data.tags?.some( t => chosenCategories.value.includes(t) ) );
+    return posts.filter( p => p.data.tags?.includes('published') && p.data.tags?.some( t => chosenCategories.value.includes(t) ) );
   });
 
 </script>

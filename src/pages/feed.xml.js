@@ -4,7 +4,7 @@ import MarkdownIt from 'markdown-it';
 
 import { getCollection } from 'astro:content';
 
-const blog = await getCollection('blog');
+const blog =(await getCollection('blog')).filter( p => p.data.tags?.includes('published') );
 
 const parser = new MarkdownIt();
 
