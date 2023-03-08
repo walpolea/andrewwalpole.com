@@ -19,7 +19,7 @@ This post is likely to get long, so I'll split up the sections into a table of c
 - [A World Beyond Hardware Determinism](#beyond-hardware-determinism)
 - [Understanding Robust-First](#understanding-robust-first)
 - [A Whole New World of Computer Science](#new-world-of-computer-science)
-- [Writing Robust-First Code](#writing-robust-first-code)
+- [Living Computation as Robust-First Code](#living-computation-as-robust-first-code)
 - [The Movable Feast Machine](#the-movable-feast-machine)
 - [The T2 Tile Project](#the-t2-tile-project)
 - [How You Can Get Involved](#get-involved)
@@ -68,21 +68,54 @@ And so we're left with the Robust-First Computing Creed:
 
 Hello. Are you still with me? Thanks! Let's try to bridge into the more tangible aspects of these wild ideas I've laid out, and get into what this all might look like from a hardware and software perspective.
 
-It's important to set a good perspective for all of this. Undoing CPU and RAM and starting over is hard and will be slow, and we're only barely beyond, or even arguably at, the starting line. *But that's what is so interesting to me.* After 80 years of core computer science discovery, nearly all based on deterministic execution, this feels like a small, obscured basement door, rarely perturbed, that opens up into an entirely new parallel universe of undiscovered computer science. **Absolutely wild!**
+It's important to set a good perspective for all of this. Undoing CPU and RAM and starting over is hard and will be slow, and we're only barely beyond, or even arguably at, the starting line. *But that's what is so interesting to me.* After 80 years of core computer science discovery, nearly all based on deterministic execution, this feels like a small, obscured basement door, left dusty and unperturbed, that opens up into an entirely new parallel universe of undiscovered computer science. **Absolutely wild!**
 
-<a id="writing-robust-first-code" href="#writing-robust-first-code">
+<a id="living-computation-as-robust-first-code" href="#living-computation-as-robust-first-code">
 
-## Writing Robust-First Code
+## Living Computation as Robust-First Code 
 </a>
+
+So what does robust-first code look like? One way to answer this question objectively is to look around and see if we can find any robust-first systems that already exist, and in fact, they do! Humans, animals, microorganisms, plants; *living systems* are incredible examples of computational systems built to withstand and execute amidst wild amounts of varying environmental factors.
+
+From Dave's own Robust-first computing wiki:
+
+> Viewed as a kind of computer, note how different a living organism is compared to a serial deterministic machine. Deterministic machines are 100% completely repeatable – from the same inputs will come the exact same outputs — while living organisms rarely do anything the exact same way twice. Deterministic machines will crash, seize-up, or otherwise misbehave when virtually anything goes wrong inside them; living organisms, by contrast, can suffer grievous injury and yet survive, handle the immediate situation, and get away long enough to heal up and live on.
+
+And so in thinking about what our code might look like, it's put forth that living systems are ripe for the picking to discover some of the base principles that might help us get into this new world.
+
+- healing
+- redundancy
+- plasticity
+- stigmergy
+- bottom-up computing
+- agential systems
+
+And many more observable concepts can be repurposed into the pursuit of building robust software.
+
+> "But Andrew, that's not writing code, that's thinking about writing code!"
+
+Too true! To get down to the clickity-clacking of our keyboards there's a lot of work to figure out and do. But once again, thanks to Dave Ackley and others thinking about these ideas for many years now, there are some places to lean on to jump further into it.
+
 
 <a id="the-movable-feast-machine" href="#the-movable-feast-machine">
 
-## The Movable Feast Machine
+### The Movable Feast Machine
 </a>
+
+The Movable Feast Machine (MFM) is Dave's specific architectural implementation of a software operating system, meant as a basis for programming robust-first software. Certainly, it's one of many possible ways you could build a robust-first architecture, but having worked with it myself, I would implore you to take a deep look at all it has to offer before trying to come up with your own system.
+
+When people first see the MFM running, it's common to hear, "oh, it's like Conway's Game of Life!" And the answer is, "Yes, a little bit, but 'No' a lot a bit."
+
+The MFM is a spatially laid-out 2D `Grid`, where individual grid `Sites`, implemented on hardware `Tiles` can contain `Atoms` which are essentially small agent programs that execute code/behaviors upon the grid within their own localized space. The important part is that there is no central control here. Each Atom on the grid can only see four sites away from its current location. The tiles, where sites are implemented are also treated as an implementation detail in the architecture: they're required to create a physical grid of tiles, and do help with robustness in that tiles can be swapped in and out as things need maintenance, but otherwise, the sites and atoms have no understanding that they are there; there is only the vast grid.
+
+This brings us to an aside that I had not yet figured out how to work in. The MFM grid is built to be *indefinitely scalable*. Don't get it confused with infinitely scalable, we're not talking theory here. By having no centralized hardware or software unit, the MFM is designed to surpass traditional computing power, not by being efficient and fast, but by being able to grow in size without limits.
+
+The official MFM is currently available in two places: First, you can get started with the Movable Feast Machine Simulator (MFMS). Dave has built this as a software program that runs on Linux and can be programmed in two programming languages he has concocted for robust-first programming: ULAM and SPLAT.
+
 
 <a id="the-t2-tile-project" href="#the-t2-tile-project">
 
-## The T2 Tile project
+### The T2 Tile project
 </a>
 
 <a id="get-involved" href="#get-involved">
