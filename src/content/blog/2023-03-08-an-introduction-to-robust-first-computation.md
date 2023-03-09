@@ -1,6 +1,7 @@
 ---
 tags:
   - post
+  - published
   - insights
   - computer science
 title: An Introduction To Robust-First Computation
@@ -24,7 +25,7 @@ This post is likely to get long, so I'll split up the sections into a table of c
 - [MFMS](#mfms)
 - [The T2 Tile Project](#the-t2-tile-project)
 - [MFM-JS](#mfm-js)
-- [How You Can Get Involved](#get-involved)
+- [Get Involved](#get-involved)
 
 <br>
 
@@ -33,9 +34,9 @@ This post is likely to get long, so I'll split up the sections into a table of c
 ## A World Beyond Hardware Determinism
 </a>
 
-To set the stage for all of this, we have to look at the foundational components of computing we desperately rely on today. CPU and RAM; the Von Neumann Architecture has been the underlying fixture upon which we compute for nearly 80 years. It's the guarantee of hardware determinism that allows us to code in the way we do: the minutely micromanaged dictatorship of the *Centralized* Processor Unit tells us that with its complete worldview and direct access to the entire software state held in RAM, it will not ever deviate from perfection. So that from step one of our program to step one billion, we can rely on deterministic results and value to be what we expect them to be.
+To set the stage for all of this, we have to look at the foundational components of computing we desperately rely on today. CPU and RAM; [the Von Neumann Architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture) has been the underlying fixture upon which we compute for nearly 80 years. It's the guarantee of hardware determinism that allows us to code in the way we do: the minutely micromanaged dictatorship of the *Centralized* Processor Unit tells us that with its complete worldview and direct access to the entire software state held in RAM, it will not ever deviate from perfection. So that from step one of our program to step one billion, we can rely on deterministic results and values to be what we expect them to be.
 
-This is how Dave put it in his talk, and when it's put this way it sounds quite amazing, *too amazing*. Hardware determinism is fragile. Sure it has taken us incredibly far, I'm not saying to discount it at all. But the fact is, we've climbed so high on this fragile path that as we begin to see limitations ahead of us, we're becoming more and more aware of the treacherous place we're currently computing in.
+This is how Dave put it in his talk, and when put this way it sounds quite amazing, *too amazing*. Hardware determinism is fragile. Sure it has taken us incredibly far, I'm not saying to discount it at all. But the fact is, we've climbed so high on this fragile path that as we begin to see limitations ahead of us, we're becoming more and more aware of the treacherous place we're currently computing in.
 
 One bit-flip and we might be cooked - might not be too - but might be indeed, and there's no way to predict which it will be. Crashes, blue screens, all of these symptoms showing through the cracks of hardware determinism. And we pave over them:
 
@@ -44,7 +45,9 @@ One bit-flip and we might be cooked - might not be too - but might be indeed, an
 
 We avoid the underlying issue entirely because we accept it absolutely as the immovable, unchangeable part of the system.
 
-But here's the mind-blowing, blue-pill-offering moment: What of a world beyond hardware determinism? A new system, built from the ground up, where hardware certainly tries to be correct, but doesn't guarantee it, and without that contract, software now has to be built to exist and adapt in that world.
+#### But here's the mind-blowing, blue-pill-offering moment:
+
+What of a world beyond hardware determinism? A new system, built from the ground up, where hardware certainly tries to be correct, but doesn't guarantee it, and without that contract, software now has to be built to run and adapt in that world.
 
 Well, that's *Robust-First Computation*, a computational system of hardware and software that embraces non-deterministic execution, and it's not just an abstract idea anymore.
 
@@ -57,7 +60,7 @@ Well, that's *Robust-First Computation*, a computational system of hardware and 
 
 In order to understand why it's Robust-First Computation, we need to break the problem down. CPU and RAM impose a C.E.O. paradigm into its computational policy: *Correct and Efficient Only!*
 
-As soon as we dispose of that foundation, we need to understand what other concepts then become available and useful on a less reliable platform. Robustness is *the ability to withstand or overcome adverse conditions or rigorous testing* and in an environment that is no longer guaranteed to be correct, lends itself incredibly well as a concept to deal with incorrectness or unknown conditions. So as we introduce the ability to be incorrect, we can trade off efficiency for robustness (because they are at odds) in order to maintain correctness.
+As soon as we dispose of that foundation, we need to understand what other concepts then become available and useful on this less reliable platform. Robustness is *the ability to withstand or overcome adverse conditions or rigorous testing* and in an environment that is no longer guaranteed to be correct, lends itself incredibly well as a concept to deal with incorrectness or unknown conditions. So as we introduce the ability to be incorrect, we can trade off efficiency for robustness (because they are at odds) in order to maintain correctness.
 
 And so we're left with the Robust-First Computing Creed:
 
@@ -169,7 +172,7 @@ If you're reading this because you follow me, you're likely a lot more web-orien
 
 Leaving that talk in 2017, an unquenchable desire to see what robust-first programming was all about started to grow in me. Without the ability to run the MFMS, my only option was to reimplement the concepts for myself to a level that let me play with it all first-hand.
 
-Out of that came [MFM.rocks](https://mfm.rocks) where you can see some of the Elements I've built over the years in action. And this [twitter thread](https://twitter.com/walpolea/status/1055483881950834688?s=20) follows some of the highlights, learning and experiments I undertook as well.
+Out of that came [MFM.rocks](https://mfm.rocks) where you can see some of the Elements I've built over the years in action. And this [twitter thread](https://twitter.com/walpolea/status/1055483881950834688?s=20) follows some of the highlights, learnings and experiments I undertook as well.
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
 <video width="100%" style="aspect-ratio:1/1;" src="/static/blog/robust/cell-split.mp4" autoplay loop muted></video>
@@ -182,15 +185,21 @@ I'm happy to walk through the interworkings of the MFM-JS engine and Element pro
 
 <a id="get-involved" href="#get-involved">
 
-## How you can get involved
+## Get Involved
 </a>
 
-If you've made it this far, thank you again. There are a lot of avenues to get started, so in no particular order here are some useful links:
+If you made it this far, thank you again. It's a lot to digest and took me a while to connect many of the dots.
+
+I've been wanting to put this all together for a while now, but to what end? Well, I guess part of me thinks there are folks like me who will be very intrigued by these ideas and want to explore them further as I have. If that might be you, I hope this offers enough getting-started material for you to begin the descent into the rabbit hole.
+
+Here are some additional useful links to help your exploration:
 
 - Join us in the [T2 Tile Discord](https://discord.gg/rBV6Y6sWNY) where further questions and discussions about all this stuff is encouraged!
 - Dave also runs a non-profit called the [Living Computation Foundation](https://www.livingcomputation.org/) where you can donate to the T2 Tile project.
-- Check out the [T2 Tile Youtube Channel](https://www.youtube.com/channel/UC1M91QuLZfCzHjBMEKvIc-A) and the [Dave Ackley Youtube channel](https://www.youtube.com/@DaveAckley) which has some great MFM demos.
-- More Information and links about the MFM can be found at [movablefeastmachine.com](https://movablefeastmachine.com/)
-- Dave has written one of my favorite "computer-science fiction" pieces called [The Path to Best Effort](https://zenodo.org/record/1304010#.ZAlK6uzMJqs) which is a scientific publication written in the year 2039 and chronicles the historical uprising of robust-first computational systems.
+- Check out the [T2 Tile Youtube Channel](https://www.youtube.com/channel/UC1M91QuLZfCzHjBMEKvIc-A) and the [Dave Ackley Youtube channel](https://www.youtube.com/@DaveAckley) which has some great MFM demos and teachings.
+- Here's an [ALife 2020 workshop](https://www.livingcomputation.org/edu/alife2020/) that walks you through setting up MFMS and some ULAM and SPLAT basics.
+- More Information and links about the MFM can be found at [movablefeastmachine.com](https://movablefeastmachine.com/).
+- Dave has written one of my favorite "computer-science fiction" pieces called, [The Path to Best Effort](https://zenodo.org/record/1304010#.ZAlK6uzMJqs) which is a scientific publication written in the year 2039 and chronicles the historical uprising of robust-first computational systems.
 - You can find [Dave](https://hachyderm.io/@livcomp) and [I](https://mastodon.online/@walpolea) on mastodon as well.
-- [Lu Wilson](https://mastodon.social/@TodePond) also has a lovely MFM-inspired engine called [Sandpond](https://sandpond.cool/) which they talk about on their [Youtube Channel](https://www.youtube.com/@TodePond)
+- [Lu Wilson](https://mastodon.social/@TodePond) also has a lovely MFM-inspired engine called [Sandpond](https://sandpond.cool/) which they talk about on their [Youtube Channel](https://www.youtube.com/@TodePond).
+- Even Von Neumann himself thought we would [be moving away from Serial Determinism](https://www.lesswrong.com/posts/Eve2miBH8wAhhxNwT/von-neumann-s-critique-of-automata-theory-and-logic-in) very soon after his initial architecture was demonstrated.
