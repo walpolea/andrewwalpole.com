@@ -94,12 +94,12 @@ From Dave's own [Robust-first computing wiki](http://robust.cs.unm.edu/doku.php?
 
 And so in thinking about what our code might look like, it's put forth that living systems are ripe for the picking to discover some of the base principles that might help us get into this new world.
 
-- healing
-- redundancy
-- plasticity
-- stigmergy
-- bottom-up computing
-- agential systems
+- [healing](https://en.wikipedia.org/wiki/Wound_healing)
+- [redundancy](https://en.wikipedia.org/wiki/Gene_redundancy)
+- [plasticity](https://en.wikipedia.org/wiki/Phenotypic_plasticity)
+- [stigmergy](https://en.wikipedia.org/wiki/Stigmergy)
+- [bottom-up computing](https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design)
+- [agential systems](https://en.wikipedia.org/wiki/Multi-agent_system)
 
 And many more observable concepts can be repurposed into the pursuit of building robust software.
 
