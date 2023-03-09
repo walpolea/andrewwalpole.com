@@ -3,6 +3,15 @@
 
 .blog, .work {
 
+  a:has(:is(h1,h2,h3)) {
+    display:block;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   p + :is(h1, h2, h3 ) {
     margin-top:4rem;
   }
