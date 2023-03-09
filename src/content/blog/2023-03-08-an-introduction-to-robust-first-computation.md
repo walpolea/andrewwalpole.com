@@ -113,9 +113,13 @@ Too true! To get down to the clickity-clacking of our keyboards there's a lot of
 
 The Movable Feast Machine ([MFM](https://github.com/DaveAckley/MFM)) is a specific architectural implementation of a software operating system, meant as a basis for programming robust-first software. Certainly, it's one of many possible ways you could build a robust-first architecture, but having worked with it myself, I would implore you to take a deep look at all it has to offer before trying to come up with your own system.
 
+<video width="100%" style="aspect-ratio:16/9;" src="/static/blog/robust/mfm.mp4" autoplay loop muted></video>
+
 When people first see the MFM running, it's common to hear, "oh, it's like Conway's Game of Life!" And the answer is, "Yes, a little bit, but 'No' a lot a bit."
 
 The MFM is a spatially laid-out 2D `Grid`, where individual grid `Sites`, implemented on hardware `Tiles` can contain `Atoms` which are essentially small agent programs that execute code or behaviors upon the grid within their own localized space. The important part is that there is no central control here. Each Atom on the grid can only see Manhattan Distance 4 sites away from its current location. This is called the `Event Window` and it brings enormous power and constraint in building atoms to navigate and do things together on the grid.
+
+<img style="width:max(320px, 50%);" src="/static/blog/robust/event-window.png" alt="The Event Window">
 
 The tiles, where sites are implemented are treated as an implementation detail in the architecture: they're required to create a physical grid of tiles, and do help with robustness in that tiles can be swapped in and out as things need maintenance, but otherwise, the sites and atoms have no understanding that they are there; there is only the vast grid.
 
@@ -151,6 +155,9 @@ The T2 Tile Project introduction video is also a great way to hear a lot of thes
 
 Or if you want to skip all the way forward to seeing what this indefinitely scalable tiled grid of computers looks like, there's a [T2 Tile Demos](https://www.youtube.com/channel/UCvYU9hl3y-anHrD_Z6ECB_Q) channel as well.
 
+<img style="width:max(320px, 50%);" src="/static/blog/robust/t2tiles.jpg" alt="Grid of actual T2 Tiles on a wall">
+
+
 <br>
 
 <a id="mfm-js" href="#mfm-js">
@@ -163,6 +170,11 @@ If you're reading this because you follow me, you're likely a lot more web-orien
 Leaving that talk in 2017, an unquenchable desire to see what robust-first programming was all about started to grow in me. Without the ability to run the MFMS, my only option was to reimplement the concepts for myself to a level that let me play with it all first-hand.
 
 Out of that came [MFM.rocks](https://mfm.rocks) where you can see some of the Elements I've built over the years in action. And this [twitter thread](https://twitter.com/walpolea/status/1055483881950834688?s=20) follows some of the highlights, learning and experiments I undertook as well.
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+<video width="100%" style="aspect-ratio:1/1;" src="/static/blog/robust/cell-split.mp4" autoplay loop muted></video>
+<video width="100%" style="aspect-ratio:1/1;" src="/static/blog/robust/trap.mp4" autoplay loop muted></video>
+</div>
 
 I'm happy to walk through the interworkings of the MFM-JS engine and Element programming API if anyone is interested. Just pop into the T2 Tile discord (linked below) and send a message!
 
