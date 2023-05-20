@@ -3,6 +3,7 @@ tags:
   - post
   - published
   - insights
+  - web
 title: Are We The Weirdos?
 slug: are-we-the-weirdos
 summary: Only in the last few years have I realized that web dev as a profession and a hobby is like having a superpower, but it also makes me kind of weird.
