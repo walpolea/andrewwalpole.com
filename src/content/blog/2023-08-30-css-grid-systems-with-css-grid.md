@@ -35,7 +35,7 @@ But here's my big insight: **People missed CSS Grid a little extra because it's 
 
 And so all that hot new software that we saw with wrapping Flexbox or float layouts over many years; all that hype and buzz the communities would be full of at regular intervals wasn't there for Grid. Only now that browsers are finally rallying to get us subgrid is there a little resurgence in buzz.
 
-## Grid Doesn't need a Framework
+## Grid Doesn't Need a Framework
 
 So here's my buzz, and my testimony as a CSS Grid addict: *Grid makes building for the web very unscary, or dare I say, easy.* I reach for it daily. And I've even [tried to build a framework around it](https://codepen.io/walpolea/pen/ExOKZVZ?editors=0100). But you don't really need it. Its syntax is lightweight and immensely capable on its own, for both simple straight-forward web development up through highly componentized modular systems.
 
