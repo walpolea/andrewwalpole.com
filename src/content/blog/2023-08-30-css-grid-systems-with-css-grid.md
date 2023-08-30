@@ -19,7 +19,7 @@ Most of those frameworks use a traditional `n-columns` (usually defaulting to 12
 
 ## Enter CSS Grid
 
-But then in 2017, all the major modern browsers (excluding IE) got support for CSS Grid. I remember it coming out of the gate with a pretty big bang, especially with Jen Simmons and Mozilla pouring time and resources into evangelizing Grid's capabilities and Firefox's novel and superior devtools support of it.
+But then in 2017, all the major modern browsers (excluding IE) got support for CSS Grid. I remember it coming out of the gate with a pretty big bang, especially with [Jen Simmons](https://front-end.social/@jensimmons) and Mozilla pouring time and resources into evangelizing Grid's capabilities and Firefox's novel and superior devtools support of it.
 
 The early Grid days were good; buzz about it lingered, and it seemed like a lot of folks adopted it. But eventually, like all new shiny features, Grid became just another thing to reach for.
 
