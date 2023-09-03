@@ -50,10 +50,10 @@ In the Salesforce email editor becomes something like:
   <!--  Salesforce adds in this <select> for the choices:  -->
   <span class="AE_customText" tagtext="customText" required="false">
     <select id="0" class="hideCustomTextValues">
-      <option id="0_0" value="A message from your NERLYNX® (neratinib) tablets sales representative">This is the first optional hidden preheader</option>
-      <option id="0_1" value="A message from your NERLYNX® (neratinib) tablets sales representative" style="display: none" hidden="">This is the first optional hidden preheader</option>
-      <option id="0_2" value="A message from your NERLYNX® (neratinib) tablets clinical nurse educator">And this is a second optional hidden preheader</option>
-      <option id="0_3" value="A message from your NERLYNX® (neratinib) tablets clinical nurse educator" style="display: none" hidden="">And this is a second optional hidden preheader</option>
+      <option id="0_0" value="This is the first optional hidden preheader">This is the first optional hidden preheader</option>
+      <option id="0_1" value="This is the first optional hidden preheader" style="display: none" hidden="">This is the first optional hidden preheader</option>
+      <option id="0_2" value="And this is a second optional hidden preheader">And this is a second optional hidden preheader</option>
+      <option id="0_3" value="And this is a second optional hidden preheader" style="display: none" hidden="">And this is a second optional hidden preheader</option>
     </select>
   </span>
   
