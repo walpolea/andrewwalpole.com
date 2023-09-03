@@ -10,7 +10,7 @@ date: 2023-09-03 12:00:00
 # blogcast: "https://pub-40fccf9e493a4d029eb2b8955f358ac3.r2.dev/hidden-customtext-preheader-in-veeva-salesforce-emails.mp3"
 ---
 
-# Hidden customText Preheaders in Veeva/Salesforce Emails
+# Hidden customText Preheaders in Veeva / Salesforce Emails
 
 Here's a very specific one in hopes of preventing someone from having the fraught Google expedition I had.
 
