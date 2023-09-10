@@ -4,10 +4,11 @@ tags:
   - published
   - front-end
   - web
+  - design
 title: Glowing Blurred Backgrounds with CSS
 slug: glowing-blurred-backgrounds-with-css
 summary: A quick walk-through of an easy, artsy and impressive pure CSS visual effect.
-date: 2023-09-09 12:00:00
+date: 2023-09-10 12:00:00
 # blogcast: "https://pub-40fccf9e493a4d029eb2b8955f358ac3.r2.dev/remote-leadership-takes-a-concerted-effort.mp3"
 ---
 
