@@ -1,13 +1,48 @@
 ---
 
+let activePath = Astro.url.pathname;
+
+const {showHome = false} = Astro.props;
+
+const links = [
+  {
+    title:"home",
+    path:"/"
+  },
+  {
+    title:"blog",
+    path:"/blog"
+  },
+  {
+    title:"work",
+    path:"/work"
+  },
+  {
+    title:"resume",
+    path:"/resume"
+  },
+  {
+    title:"art",
+    path:"https://art.andrewwalpole.com"
+  },
+]
+
 ---
 
 <nav class="site-navigation">
   <ul>
-    <li><a href="/blog">blog</a></li>
-    <li><a href="/work">work</a></li>
-    <li><a href="/static/andrew-walpole-resume.pdf" target="_blank" rel="noopener noreferrer">resume</a></li>
-    <li><a href="https://art.andrewwalpole.com">art</a></li>
+    {
+      links.map( (link, i) => {
+
+        if( !showHome && i === 0 ) {
+          return;
+        }
+
+        return (
+          <li><a href={link.path} class:list={[{active: activePath === link.path}]}>{link.title}</a></li>
+        )
+      })
+    }
   </ul>
   <ul>
     <li>
@@ -63,6 +98,7 @@
     padding:0;
 
     display:flex;
+    gap:10px;
     width:100%;
     justify-content:space-between;
     align-items: center;
@@ -73,7 +109,7 @@
         font-family: "Playfair Display", serif;
         text-decoration:none;
 
-        &:hover {
+        &:hover, &.active {
           text-decoration: underline;
         }
       }

@@ -35,6 +35,7 @@
   --ff-sans: "Raleway", sans-serif;
   --ff-serif: "Playfair Display", serif;
 
+  --fs--3: clamp(0.56rem, calc(0.62rem + 0.18vw), 0.95rem);
   --fs--2: clamp(0.76rem, calc(0.82rem + 0.23vw), 1.15rem);
   --fs--1: clamp(1.04rem, calc(0.97rem + 0.36vw), 1.40rem);
   --fs-0: clamp(1.25rem, calc(1.15rem + 0.50vw), 1.75rem);

@@ -177,6 +177,15 @@
     font-style:italic;
   }
 
+  .image-float-left {
+
+    display:flow-root;
+    
+    img {
+      float:left;
+    }
+  }
+
 
   .likes {
   
