@@ -35,10 +35,10 @@
   
   const filteredPosts = computed( () => {
     if(chosenCategories.value.length === 0) {
-      return posts.filter( p => p.data.tags?.includes('published') ).reverse();
+      return posts.filter( p => p.data.tags?.includes('published') );
     }
 
-    return posts.filter( p => p.data.tags?.includes('published') && p.data.tags?.some( t => chosenCategories.value.includes(t) ) ).reverse();
+    return posts.filter( p => p.data.tags?.includes('published') && p.data.tags?.some( t => chosenCategories.value.includes(t) ) );
   });
 
 </script>
