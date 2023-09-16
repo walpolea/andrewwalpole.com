@@ -24,6 +24,11 @@ const media = [
     alt:""
   },
   { 
+    m:"standing-jack.jpg",
+    c:"",
+    alt:""
+  },
+  { 
     m:"jackorn.jpg",
     c:"",
     alt:""
@@ -31,6 +36,11 @@ const media = [
   { 
     m:"jackheadlight1.mp4",
     c:"v2",
+    alt:""
+  },
+  { 
+    m:"saucy-susan.mp4",
+    c:"h2",
     alt:""
   },
   { 
@@ -49,8 +59,33 @@ const media = [
     alt:""
   },
   { 
+    m:"spinner.mp4",
+    c:"",
+    alt:""
+  },
+  { 
+    m:"hat-charger.jpg",
+    c:"v2",
+    alt:""
+  },
+  { 
     m:"pokemon.jpg",
     c:"h2",
+    alt:""
+  },
+  { 
+    m:"hufflepuff.jpg",
+    c:"",
+    alt:""
+  },
+  { 
+    m:"cubicles.jpg",
+    c:"h2",
+    alt:""
+  },
+  { 
+    m:"badge.jpg",
+    c:"",
     alt:""
   },
   { 
@@ -60,6 +95,11 @@ const media = [
   },
   { 
     m:"qdobalightup.jpg",
+    c:"v2",
+    alt:""
+  },
+  { 
+    m:"qbox.jpg",
     c:"v2",
     alt:""
   },
@@ -104,15 +144,80 @@ const media = [
     alt:""
   },
   { 
-    m:`<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hey <a href="https://twitter.com/joeltelling?ref_src=twsrc%5Etfw">@joeltelling</a>, I see your sauce spinner and raise you a Saucy Susan <a href="https://twitter.com/hashtag/3dprinting?src=hash&amp;ref_src=twsrc%5Etfw">#3dprinting</a> <a href="https://twitter.com/hashtag/eggrolls?src=hash&amp;ref_src=twsrc%5Etfw">#eggrolls</a> <a href="https://t.co/IbjgCXGfvo">pic.twitter.com/IbjgCXGfvo</a></p>&mdash; Andrew Walpole (@walpolea) <a href="https://twitter.com/walpolea/status/852900231679168513?ref_src=twsrc%5Etfw">April 14, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`,
+    m:"tomnook1.jpg",
     c:"v2",
     alt:""
   },
   { 
-    m:`<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ladies and gentlemen, I give you, the Salsa Susan. <a href="https://twitter.com/hashtag/3dprinted?src=hash&amp;ref_src=twsrc%5Etfw">#3dprinted</a> <a href="https://t.co/xxIbAAjcRA">pic.twitter.com/xxIbAAjcRA</a></p>&mdash; Andrew Walpole (@walpolea) <a href="https://twitter.com/walpolea/status/941403654342324224?ref_src=twsrc%5Etfw">December 14, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`,
+    m:"tomnook2.jpg",
+    c:"",
+    alt:""
+  },
+  { 
+    m:"tomnook3.jpg",
     c:"v2",
     alt:""
-  }
+  },
+  { 
+    m:"plane-launcher.mp4",
+    c:"",
+    alt:""
+  },
+  { 
+    m:"pencil-award.mp4",
+    c:"v2",
+    alt:""
+  },
+  { 
+    m:"ju-award.jpg",
+    c:"",
+    alt:""
+  },
+  { 
+    m:"tikis.jpg",
+    c:"",
+    alt:""
+  },
+  { 
+    m:"stand.jpg",
+    c:"h2 v2",
+    alt:""
+  },
+  { 
+    m:"adventure.mp4",
+    c:"v2",
+    alt:""
+  },
+  { 
+    m:"antonio-sign.jpg",
+    c:"h2",
+    alt:""
+  },
+  { 
+    m:"amin-sign.jpg",
+    c:"h2",
+    alt:""
+  },
+  { 
+    m:"rabble.jpg",
+    c:"v2",
+    alt:""
+  },
+  { 
+    m:"dino.mp4",
+    c:"v2",
+    alt:""
+  },
+  { 
+    m:"pinboard.mp4",
+    c:"",
+    alt:""
+  },
+  { 
+    m:"lightswitch.mp4",
+    c:"",
+    alt:""
+  },
 ]
 ---
 
@@ -127,13 +232,52 @@ const media = [
 
       return (<Fragment set:html={m}/>)
     } else if( m.endsWith('.mp4')) {
-      return (<div class='video-container' class:list={[c]}><video src={media_root + m} autoplay playsinline muted loop></video></div>);
+      return (
+        <div class='media-container' class:list={[c]}>
+          <video class="lazy" autoplay playsinline muted loop>
+            <source  data-src={media_root + m} type="video/mp4" />
+          </video>
+        </div>);
     } else {
-      return (<img class={c} src={media_root + m}/>);
+      return (
+      <div class='media-container' class:list={[c]}>
+        <img src={media_root + m} loading="lazy" />
+      </div>
+      );
     }
   })}
 
 </div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+  
+    if ("IntersectionObserver" in window) {
+      var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(video) {
+          if (video.isIntersecting) {
+            for (var source in video.target.children) {
+              var videoSource = video.target.children[source];
+              if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                videoSource.src = videoSource.dataset.src;
+              }
+            }
+  
+            video.target.load();
+            video.target.classList.remove("lazy");
+            lazyVideoObserver.unobserve(video.target);
+          }
+        });
+      });
+  
+      lazyVideos.forEach(function(lazyVideo) {
+        lazyVideoObserver.observe(lazyVideo);
+      });
+    }
+  });
+  </script>
 
 
 <style lang="scss">
@@ -141,8 +285,12 @@ const media = [
   .print-gallery {
 
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: dense;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
 
     > * {
       aspect-ratio: 1;
@@ -173,13 +321,14 @@ const media = [
       grid-row: span 3;
     }
 
-    img, blockquote, .video-container {
+    blockquote, .media-container {
       width:100%;
+      height:100%;
       display:block;
       margin:0;
       overflow:hidden;
 
-      video {
+      video, img {
         width:100%;
         height:100%;
         object-fit:cover;
