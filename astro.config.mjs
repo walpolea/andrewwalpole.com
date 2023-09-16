@@ -9,5 +9,8 @@ export default defineConfig({
   site: `https://andrewwalpole.com`,
   integrations: [vue(), sitemap({
     filter: page => !page.includes('/preview/')
-  }), mdx()]
+  }), mdx()],
+  redirects: {
+    '/resume': '/static/andrew-walpole-resume.pdf'
+  }
 });
