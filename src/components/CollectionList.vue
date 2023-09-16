@@ -2,8 +2,8 @@
     <div v-if="interactive" class="filter">
       <ul class="filter-list">
         <li class="filterbox" v-for="cat in allCategories">
-          <label   :class="{checked:chosenCategories.includes(cat)}">
-            <input  type="checkbox" v-model="chosenCategories" :value="cat">{{cat}}
+          <label :class="{checked:chosenCategories.includes(cat)}">
+            <input type="checkbox" v-model="chosenCategories" :value="cat">{{cat}}
           </label>
         </li>
       </ul>
@@ -26,7 +26,7 @@
 
   onMounted( () => {
     interactive.value = true;
-    // console.log( posts );
+    console.log( posts );
     posts.forEach( p => p.data.tags?.includes('published') === false ? console.log({data: p.data}) : null );
   });
 
@@ -35,10 +35,10 @@
   
   const filteredPosts = computed( () => {
     if(chosenCategories.value.length === 0) {
-      return posts.filter( p => p.data.tags?.includes('published') );
+      return posts.filter( p => p.data.tags?.includes('published') ).reverse();
     }
 
-    return posts.filter( p => p.data.tags?.includes('published') && p.data.tags?.some( t => chosenCategories.value.includes(t) ) );
+    return posts.filter( p => p.data.tags?.includes('published') && p.data.tags?.some( t => chosenCategories.value.includes(t) ) ).reverse();
   });
 
 </script>
