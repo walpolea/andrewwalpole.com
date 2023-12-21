@@ -4,11 +4,11 @@ import MarkdownIt from 'markdown-it';
 
 import { getCollection } from 'astro:content';
 
-const blog =(await getCollection('blog')).filter( p => p.data.tags?.includes('published') );
+const blog = (await getCollection('blog')).filter( p => p.data.tags?.includes('published') );
 
 const parser = new MarkdownIt();
 
-export function get(context) {
+export function GET(context) {
   return rss({
     title: 'Andrew Walpole\'s Blog',
     description: 'A blog about web development, engineering leadership, digital strategy and the occasional off-topic rant.',
