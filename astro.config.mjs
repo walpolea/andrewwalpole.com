@@ -11,6 +11,6 @@ export default defineConfig({
     filter: page => !page.includes('/preview/')
   }), mdx()],
   redirects: {
-    '/resume': '/static/andrew-walpole-resume.pdf'
+    // '/resume': '/static/andrew-walpole-resume.pdf'
   }
 });

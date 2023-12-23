@@ -1,0 +1,439 @@
+{
+  "title":"Principal Web Developer & Engineering Manager",
+  "name":"Andrew Walpole",
+  "contact":{
+    "email":"walpolea@gmail.com",
+    "phone":"619.723.8803",
+    "location":"San Diego, CA / US Remote"
+  },
+  "professionalSummary": [
+    "With 20 years of experience in software engineering, and 10 years of experience leading and mentoring engineers and UX designers, I lead healthy, effective teams through setting clear expectations, continuous coaching and mentoring, and establishing team trust.",
+    "I architect and build performant web applications, high-traffic websites, and internal tools and systems. I’m highly adaptable to new technologies and have experience across multiple front-end and back-end frameworks.",
+    "I partner excellently with teams and external stakeholders to best serve the business and its overall goals. I work hard to bring value and positive change through thoughtful people leadership, deep technical knowledge, and strategic business decision making.",
+    "I see opportunities, make insightful business connections, and know how to make that strategy actionable.",
+    "I lead and communicate in all directions; I’m not afraid to be held and hold others accountable.",
+    "I write clean and robust code; know how to teach to and learn from my team without ego or hubris.",
+    "I can admit when I’m wrong, and don’t let strong opinions cloud my judgment; all situations deserve nuanced, objective analysis."
+  ],
+  "skills":[
+    {
+      "skill": "Strategic Planning",
+      "category": "leadership"
+    },
+    {
+        "skill": "Agile/Lean Leadership",
+        "category": "leadership"
+    },
+    {
+        "skill": "Design Innovation",
+        "category": "leadership"
+    },
+    {
+        "skill": "Prototyping & MVPs",
+        "category": "leadership"
+    },
+    {
+        "skill": "Product Strategy",
+        "category": "leadership"
+    },
+    {
+        "skill": "Engineering Budget Oversight",
+        "category": "leadership"
+    },
+    {
+        "skill": "Tech Presentation & Consulting",
+        "category": "leadership"
+    },
+    {
+      "skill": "JavaScript, ES6+, TypeScript",
+      "category": "front-end"
+    },
+    {
+        "skill": "Semantic HTML & Responsive CSS",
+        "category": "front-end"
+    },
+    {
+        "skill": "Vue, React, Svelte",
+        "category": "front-end"
+    },
+    {
+        "skill": "Eleventy, Astro, SSG/SSR",
+        "category": "front-end"
+    },
+    {
+        "skill": "Nuxt & Next.js",
+        "category": "front-end"
+    },
+    {
+      "skill": "Node.js & Deno",
+      "category": "back-end"
+    },
+    {
+        "skill": "Serverless & Cloud Platforms",
+        "category": "back-end"
+    },
+    {
+        "skill": "REST, GraphQL, APIs",
+        "category": "back-end"
+    },
+    {
+        "skill": "WordPress, PHP & MySQL",
+        "category": "back-end"
+    },
+    {
+        "skill": "Headless CMS Integration",
+        "category": "back-end"
+    },
+    {
+        "skill": "Vite, esbuild & Build Tools",
+        "category": "back-end"
+    },
+    {
+        "skill": "NoSQL, Firebase, MongoDB",
+        "category": "back-end"
+    },
+    {
+        "skill": "Vercel, Netlify, Cloudflare",
+        "category": "back-end"
+    },
+    {
+        "skill": "Git & GitHub (VCS)",
+        "category": "back-end"
+    },
+    {
+        "skill": "Application Architecture",
+        "category": "back-end"
+    },
+    {
+        "skill": "DNS Management",
+        "category": "back-end"
+    }
+  
+  ],
+  "workExperience":[
+    {
+    "company":"fingerpaint",
+    "website":"https://fingerpaint.com",
+    "title":"Director of Web Development",
+    "startDate": {
+        "month": "03",
+        "monthLong":"March",
+        "year": "2023"
+    },
+    "endDate":{
+        "year": "Current"
+    },
+    "blurbs":[
+        "Led and managed a team of five developers, delivering performant, accessible websites for the pharmaceutical industry.",
+        "Critical technical consultant for the MarTech department, fostering collaboration between developers, digital producers, and client teams.",
+        "Established and upheld our company's web development standards, ensuring consistency and quality across projects.",
+        "Advised on optimal technical solutions, ensuring clients' needs were met with efficient and scalable architectures.",
+        "Skillfully estimated project timelines, effort and resources, even amongst ambiguous and limited project details.",
+        "Designed and implemented robust and adaptable technical strategies and processes, positioning our projects for long-term success."
+    ]
+    },
+    {
+      "company":"TRAINA",
+      "website":"https://wearetraina.com",
+      "title":"Director of Web Development",
+      "startDate": {
+        "month": "01",
+        "monthLong":"January",
+        "year": "2020"
+      },
+      "endDate":{
+        "month": "02",
+        "monthLong": "February",
+        "year": "2023"
+      },
+      "blurbs":[
+        "Led a five-member web development team to build complex, high-quality, accessible, performant client websites; maintained low-stress, low burn-out.",
+        "Developed high-performing websites using many modern web stacks including: Wordpress, Astro, Eleventy, Nuxt.js and Next.js.",
+        "Architected and led digital strategy efforts for clients; advised clients directly on adopting technologies to fit their business goals.",
+        "Consistently met rigorous timelines and partnered successfully with designers and account managers to prioritize and manage features, timelines and project budgets.",
+        "Contributed heavily to the creation and execution of the company’s future growth strategy via the Entrepreneurial Operating System (EOS).",
+        "Implemented successful transition to agile work processes, increasing project productivity and collaboration."
+      ]
+    },
+    {
+      "company":"Jack in the Box inc.",
+      "website":"https://jackinthebox.com",
+      "title":"Manager, XD & Web Development",
+      "startDate":{
+        "month": "03",
+        "monthLong": "March",
+        "year": "2009"
+      },
+      "endDate":{
+        "month": "01",
+        "monthLong":"January",
+        "year": "2020"
+      },
+      "blurbs":[
+        "Led a five-member design and development team to develop user- and business-driven web-applications from concept to launch.",
+        "Architected and led development and design of a custom in-house training platform with angular.js, Contentful and Vue, saving over $300k per year over an off-the-shelf solution. Used agile processes to launch and iterate on applications quickly.",
+        "Ran low-cost “unconference” event five times, recognized as a major culture-building corporate event, accompanied by a Vue- and Firebase-based  scheduling app that streamlined event logistics and management.",
+        "Rebranded Multimedia Team to Experience Design Team, increasing its recognition and value beyond Training to support Operations, Marketing, HR, IT and Finance.",
+        "Cut six-figure budget by 25% while exceeding team goals and meeting business needs by turning strategic goals into prioritized, actionable project plans.",
+        " Developed interactive training content and assessment apps and tools to support the needs of restaurant operations and HR."
+      ]
+    },
+    {
+        "company": "UCSD Extension",
+        "website": "https://extendedstudies.ucsd.edu/",  
+        "title": "Adjunct Professor, Web Development",
+        "startDate": {
+            "month": "10", 
+            "monthLong": "October",
+            "year": "2014"
+        },
+        "endDate": {
+            "month": "12", 
+            "monthLong": "December",
+            "year": "2019"
+        },
+        "blurbs": [
+          "Built and taught HTML5 & CSS, responsive web design, JavaScript, JQuery, mobile programming concepts, and business of digital media courses."
+        ]
+    },
+    {
+      "company": "The Art Institute of California",
+      "website": "https://www.artinstitutes.edu/",  
+      "title": "Adjunct Professor, Web Development",
+      "startDate": {
+          "month": "02",
+          "monthLong": "February",
+          "year": "2009"
+      },
+      "endDate": {
+          "month": "10", 
+          "monthLong": "October",
+          "year": "2013"
+      },
+      "blurbs": [
+        "Instructed students on Intermediate and Advanced ActionScript 3.0, covering comprehensive topics from fundamental programming and OOP to game development and API design.",
+        "Implemented the 5-step training methodology — Prepare, Tell, Show, Do, and Review — to structure lectures and ensure effective student engagement.",
+        "Independently designed and administered a tailored class curriculum, ensuring content relevance and student comprehension."
+      ]
+    },
+    {
+      "company": "Intercasting Corp",
+      "website": "",  
+      "title": "Web & Flash Developer",
+      "startDate": {
+          "month": "03",
+          "monthLong": "March",
+          "year": "2006"
+      },
+      "endDate": {
+          "month": "02",
+          "monthLong": "February",
+          "year": "2009"
+      },
+      "blurbs": [
+        "Collaborated on web integrations and managed content using HTML, CSS, XSLT, Flash, and Javascript.",
+        "Crafted branded graphics for web/print using Photoshop and Illustrator, and developed Flash Lite mobile apps."
+      ]
+    },
+    {
+      "company": "i-Safe America, inc.",
+      "website": "",  
+      "title": "Data Admin & Interactive Developer",
+      "startDate": {
+          "month": "05",
+          "monthLong": "May",
+          "year": "2005"
+      },
+      "endDate": {
+          "month": "09",
+          "monthLong": "September",
+          "year": "2005"
+      },
+      "blurbs": []
+    },
+    {
+      "company": "Napster",
+      "website": "",  
+      "title": "Software Engineering Intern",
+      "startDate": {
+          "month": "06",
+          "monthLong": "June",
+          "year": "2004"
+      },
+      "endDate": {
+          "month": "09",
+          "monthLong": "September",
+          "year": "2004"
+      },
+      "blurbs": []
+    }
+  ],
+  "skills2":[
+    {
+      "skill": "Strategic Planning",
+      "category": "leadership",
+      "description": "Crafting and executing long-term visions and objectives for engineering teams."
+    },
+    {
+        "skill": "Agile/Lean Leadership",
+        "category": "leadership",
+        "description": "Championing Agile and Lean methodologies to ensure efficient project delivery and team collaboration."
+    },
+    {
+        "skill": "Design Innovation",
+        "category": "leadership",
+        "description": "Fostering a culture of creativity and novel design approaches within engineering teams."
+    },
+    {
+        "skill": "Prototyping & MVPs",
+        "category": "leadership",
+        "description": "Rapidly bringing product ideas to life to test viability and gather feedback."
+    },
+    {
+        "skill": "Product Strategy",
+        "category": "leadership",
+        "description": "Shaping the direction and vision of engineering products, ensuring alignment with business goals."
+    },
+    {
+        "skill": "Engineering Budget Oversight",
+        "category": "leadership",
+        "description": "Managing financial resources effectively, optimizing engineering project costs."
+    },
+    {
+        "skill": "Tech Presentation & Consulting",
+        "category": "leadership",
+        "description": "Effectively communicating technical concepts to non-technical stakeholders and providing expert advice."
+    },
+    {
+        "skill": "Stakeholder Management",
+        "category": "leadership",
+        "description": "Building and maintaining strong relationships across the organization."
+    },
+    {
+        "skill": "Change Management",
+        "category": "leadership",
+        "description": "Guiding teams through organizational changes while minimizing disruptions."
+    },
+    {
+        "skill": "Conflict Resolution",
+        "category": "leadership",
+        "description": "Addressing and resolving disputes in a constructive manner to maintain team harmony."
+    },
+    {
+        "skill": "Continuous Learning & Training",
+        "category": "leadership",
+        "description": "Promoting a culture of continuous growth and knowledge sharing within teams."
+    },
+    {
+        "skill": "Diversity & Inclusion Advocacy",
+        "category": "leadership",
+        "description": "Championing diversity in teams and fostering an inclusive work environment."
+    },
+    {
+        "skill": "Performance Metrics & KPI Management",
+        "category": "leadership",
+        "description": "Setting, tracking, and optimizing performance indicators for engineering projects."
+    },
+    {
+        "skill": "Vendor Management",
+        "category": "leadership",
+        "description": "Overseeing third-party relationships, ensuring quality and value."
+    },
+    {
+      "skill": "JavaScript, ES6+ & TypeScript",
+      "category": "front-end development",
+      "description": "Mastering web scripting with core JavaScript, leveraging modern ES6+ features, and ensuring type-safe code with TypeScript."
+    },
+    {
+        "skill": "Semantic HTML & Responsive CSS",
+        "category": "front-end development",
+        "description": "Developing web content with clear structure and design that adapts to various screen sizes."
+    },
+    {
+        "skill": "Vue, React, Svelte",
+        "category": "front-end development",
+        "description": "Expertise in leading front-end frameworks and libraries for robust web applications."
+    },
+    {
+        "skill": "Eleventy, Astro, SSG/SSR",
+        "category": "front-end development",
+        "description": "Advanced techniques for optimized web page rendering and improved performance."
+    },
+    {
+        "skill": "Nuxt & Next.js",
+        "category": "front-end development",
+        "description": "Specialized frameworks that provide a streamlined development experience and optimized output."
+    },
+    {
+        "skill": "UX/UI Collaboration",
+        "category": "front-end development",
+        "description": "Working closely with design teams to implement intuitive and appealing user experiences."
+    },
+    {
+        "skill": "Performance Optimization",
+        "category": "front-end development",
+        "description": "Enhancing the speed and responsiveness of web applications for better user experience."
+    },
+    {
+        "skill": "Web Accessibility",
+        "category": "front-end development",
+        "description": "Ensuring web products are usable by everyone, including users with disabilities."
+    },
+    {
+        "skill": "Node.js & Deno",
+        "category": "back-end development",
+        "description": "Utilizing JavaScript runtimes for scalable and efficient server-side applications."
+    },
+    {
+        "skill": "Serverless & Cloud Platforms",
+        "category": "back-end development",
+        "description": "Leveraging modern infrastructures for optimized, scalable, and cost-effective deployments."
+    },
+    {
+        "skill": "API Design (REST, GraphQL)",
+        "category": "back-end development",
+        "description": "Crafting interfaces for robust data exchange and integration between systems."
+    },
+    {
+        "skill": "Wordpress, PHP & MySQL",
+        "category": "back-end development",
+        "description": "Building dynamic websites and web applications with popular technologies."
+    },
+    {
+        "skill": "Headless CMS Integration",
+        "category": "back-end development",
+        "description": "Integrating content management systems in a decoupled architecture for greater flexibility."
+    },
+    {
+        "skill": "Build Tools (Vite, esbuild)",
+        "category": "back-end development",
+        "description": "Using tools like Vite and esbuild for optimized application bundling and deployment."
+    },
+    {
+        "skill": "NoSQL, Firebase, MongoDB",
+        "category": "back-end development",
+        "description": "Expertise in both SQL and NoSQL databases, ensuring data integrity and performance."
+    },
+    {
+        "skill": "Vercel, Netlify, Cloudflare, AWS",
+        "category": "back-end development",
+        "description": "Utilizing platforms like Vercel, Netlify, and Cloudflare for optimal web deployment."
+    },
+    {
+        "skill": "Version Control (git, GitHub)",
+        "category": "back-end development",
+        "description": "Managing codebase revisions and collaborations using tools like git and platforms like GitHub."
+    },
+    {
+        "skill": "Application Architecture",
+        "category": "back-end development",
+        "description": "Crafting robust, scalable, and maintainable backend architectures."
+    },
+    {
+        "skill": "DNS & Domain Management",
+        "category": "back-end development",
+        "description": "Managing and configuring domain name systems for web application accessibility."
+    }
+  ]
+}
+
