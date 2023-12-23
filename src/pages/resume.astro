@@ -124,6 +124,11 @@ import resumeData from '../data/resume.json';
 
       > h3 {
         grid-column: 2 / -1;
+
+        @media (max-width:460px) {
+          text-align: center;
+          grid-column: 1 / -1;
+        }
       }
     }
 
@@ -140,6 +145,12 @@ import resumeData from '../data/resume.json';
         font-size:inherit;
       }
 
+      .work-item-summary {
+        @media (max-width:460px) {
+          grid-column: 1 / -1;
+        }
+      }
+
       .blurbs {
         grid-column:  2 / -1;
 
@@ -149,6 +160,11 @@ import resumeData from '../data/resume.json';
           & + .work-blurb {
             margin-top:1rem;
           }
+        }
+
+        @media (max-width:460px) {
+          padding:0 0 0 10px ;
+          grid-column: 1 / -1;
         }
       }
     }
