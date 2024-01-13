@@ -62,6 +62,10 @@ You can set up:
 - Warp points to move throughout levels and even across separate game maps
 - And much more; Bloxels continues to add features regularly to keep games engaging
 
+### Set up for success and encouraging failure
+
+The last thing I'll focus on is how the game comes with a ton of asset packs and pre-made examples for kids to get started from. This creates a smooth on-ramp of usability and learning that is often lacking in software. At the same time, the `test` button is almost always on screen, encouraging learning to experiment and iterate with ideas with a near real-time feedback loop.
+
 ### They doubled down on the engineering
 
 I'm not going to belabor convincing you that this is a good app for kids; **it really is**.
@@ -71,10 +75,6 @@ Instead, let's take a look at what really clinches Bloxels for me personally as 
 I'm not sure I have the story pieced together 100% correct, but it seems like one of the lead engineers was able to rescue the brand and the app from the company, take it over and turn the ship around by pouring time into making it a better, more reliable product. Years later, Bloxles seems to be quite healthy, and their continuous investment into features over many years has made it the incredible app it is today.
 
 Under the hood, [play.bloxels.com](https://play.bloxels.com) is a pretty elegant looking SPA. All of the various features, capabilities and textures come in over API endpoints as structured JSON data, which is then rendered client-side. Given that once you're editing games nearly everything you see is user-generated or user-configured, it's quite a smart tactic to save and load sets of configurations back and forth, with efficiencies going into the size and structures of those datasets. Just open up `devtools` as you poke around and you'll be impressed with the interworkings of fetch calls and responses.
-
-### Set up for success and encouraging failture
-
-The last thing I'll focus on is how the game comes with a ton of asset packs and pre-made examples for kids to get started from. This creates a smooth on-ramp of usability and learning that is often lacking in software. At the same time, the `test` button is almost always on screen, encouraging learning to experiment and iterate with ideas with a near real-time feedback loop.
 
 ## tl;dr
 
