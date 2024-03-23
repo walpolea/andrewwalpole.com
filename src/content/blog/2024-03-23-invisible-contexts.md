@@ -57,7 +57,7 @@ Some of it is, yes, but we now need to deal with (and we're finally at the title
 
 ## Invisible Contexts
 
-Let's flip the problem: Listen fellow front-enders, we have a marketing problem. To our left and our right, the roles around us are dazzling the project managers, clients and VPs with their voodoo and techno-babble. We have voodoo too, but no one sees it. Our role is filled with detail; minutia. We take beautiful broad-stroked ideas and birth them into ugly reality.
+Let's take charge of the problem: Listen fellow front-enders, we have a marketing problem. To our left and our right, the roles around us are dazzling the project managers, clients and VPs with their voodoo and techno-babble. We have voodoo too, but no one sees it. Our role is filled with detail; minutia. We take beautiful broad-stroked ideas and birth them into ugly reality.
 
 Doing that for the web means taking one or two, or if we're lucky, three different screen designs and translating them into a dynamic functional system that works on all screens, all browsers, all operating systems, all devices, all users, all functional states, all user journeys and stories, etc. These are the *incredibly complex, compounded situations of reality* that we must work through, these are the **invisible contexts** that make up the primary function of the job.
 
