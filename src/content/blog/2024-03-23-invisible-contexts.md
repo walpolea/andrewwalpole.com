@@ -13,7 +13,7 @@ date: 2024-03-23 12:00:00
 
 # Invisible Contexts
 
-[Josh Collinsworth recently put out an incredibly written article]() about his perceptions of the Front-end Web Development role being devalued within the industry. If you haven't given it a read, please do!
+[Josh Collinsworth recently put out an incredibly written article](https://joshcollinsworth.com/blog/devaluing-frontend) about his perceptions of the Front-end Web Development role being devalued within the industry. If you haven't given it a read, please do!
 
 Josh sums up his article saying he just *feels it mostly*. Well I feel it too and I've been thinking a lot about why that is.
 
