@@ -63,7 +63,7 @@ Doing that for the web means taking one or two, or if we're lucky, three differe
 
 And yet they do remain mostly invisible. I don't see this work being valued in the same way it is for the UX designer; the credit was already given for the broad idea, this next step is nothing new.
 
-> "When do we really get to launch? That will be exciting!"
+> "When do we get to launch? That will be exciting!"
 
 I don't necessarily have an answer to propose to conclude this post. But I did want to end with a fun graphic and connect one more idea. [Chris Coyier pointed out that *Design Engineering* is having a moment](https://frontendmasters.com/blog/design-engineers/) and maybe this is our Fresh Start&trade; opportunity.
 
