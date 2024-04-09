@@ -56,6 +56,7 @@ When we want to use the store, we simply import the `store` object and access al
 <button class="inc">++</button>
 
 <script type="module">
+import { state } from './store.js';
 import { effect } from "@vue/reactivity";
 
 document.querySelector('.inc').addEventListener('click', () => state.increment() );
