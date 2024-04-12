@@ -56,6 +56,12 @@ header {
 
 As I mentioned, setting the `--nav-height` is important because without letting the component know how tall it might be, it can't hold any space at the top of the page for the navbar to sit into. So either your first content section will run under the navbar, or if you toggle it between `static` and `fixed` positioning when you scroll, it will jump the screen up as it's taken out of the flow. It's all much simpler if you just hold the right amount of pixel space.
 
+<aside>
+
+As an aside, you might think I'm overdoing it here and you should just use `position: sticky;`. And indeed, this will keep the header in the flow and then sticky it to the top as you scroll. But I've gone down this path a few times and I continue to hit major barriers with sticky and the togglable mobile menu you may eventually build into the nav. So until I can get past that barrier I will continue to recommend `position:fixed;` for this pattern.
+
+</aside>
+
 Next, we default the `top` to `0px` and change it to `-100%` when it has the `.hide` class applied. Add in a transition and your navbar is ready to hide and show elegantly.
 
 It's also worth mentioning the `:not(:focus-within)` bit, which allows the navbar to not be hidden when we give focus to the nav items. So as you tab through with a keyboard, the navbar will reappear.
