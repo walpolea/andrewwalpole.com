@@ -4,7 +4,6 @@ tags:
   - published
   - web
   - front-end
-  - insights
 title: The Showy / Hidey Navigation Bar
 slug: the-showy-hidey-nav-bar
 summary: An in-demand pattern distilled – a navbar that hides as you scroll down a page, but then instantly reappears and follows you when you scroll up.
