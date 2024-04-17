@@ -37,7 +37,9 @@ In this case, I sat down and said, "ok, what's one thing this thing needs to do?
 
 As a web developer, having a quick [go-to web stack](/blog/whats-your-go-to-web-stack-2024-edition/) to build projects like this is essential. So many times I've had project ideas of grandeur, only to get stalled immediately in the technical architecture because I didn't have the right tools on-hand to get started.
 
-But not this time. My muscle memory for Astro + Vue hosted on github + vercel has become strong enough that these things faded away into the background.
+But not this time. My muscle memory for Astro + Vue hosted on github + vercel has become strong enough that these things faded away into the background, letting me focus on the core functionality.
+
+If you don't have this at-hand, I recommend going into real prototype mode and using something like [codepen](https://codepen.io).
 
 
 ## Vueuse useClipboard is great!
@@ -73,7 +75,7 @@ const sheet = new CSSStyleSheet();
 document.adoptedStyleSheets = [sheet];
 
 watch( lb, () => {
-  sheet.replaceSync( `${lb.value.generateCSS()}` );
+  sheet.replaceSync( lb.value.generateCSS() );
 });
 ```
 <br>
