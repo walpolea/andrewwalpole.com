@@ -1,0 +1,52 @@
+---
+import PageSection from '../components/PageSection.astro';
+import BlankLayout from '../layouts/BlankLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+
+---
+<BlankLayout title="Andrew Walpole - Services" summary="I'm available for web development consulting.">
+  <div class="services-nav-container">
+    <SiteNav showHome />
+  </div>
+  <PageSection id="services">
+    <section>
+      <h1 class="h1">Freelance Services</h1>
+      <h2 class="h5">I offer services in front-end web development, workshops, conference talks, private tutoring sessions and more.</h2>
+    </section>
+      
+    <section class="dev">
+      <h3>Custom Web Development</h3>
+      <p>Need a website? I specialize in building custom websites. From concept to hosting, I'll handle the whole thing for you at a reasonable price and pace. My sites are accessible, interactive, SEO-optimized, highly performant and built with your needs in mind.</p>
+      <h4>Development Stack:</h4>
+      <ul>
+        <li>Framework: Astro and Vue</li>
+        <li>Hosting: Cloudflare, Vercel, Netlify or AWS Amplify</li>
+      </ul>
+    </section>
+
+    <section class="workshops">
+      <h3>Lessons and Workshops</h3>
+      <p>I am available for giving workshops to small teams or talks to large groups around modern front-end development, leading and running a development team, and building websites.</p>
+      <h4>Topics:</h4>
+      <ul>
+        <li>Advanced Layout Techniques with CSS Grid</li>
+        <li>Building interactive static sites with Astro and Vue</li>
+        <li>Engineering Management 101</li>
+        <li>Running an Unconference</li>
+        <li>And More!</li>
+      </ul>
+    </section>
+
+  </PageSection>
+</BlankLayout>
+
+<style lang="scss">
+
+h4,.h4 {
+  margin-block: 2rem;
+}
+
+section + section {
+  margin-block-start: 8rem;
+}
+</style>
