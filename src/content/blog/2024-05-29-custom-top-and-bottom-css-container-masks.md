@@ -64,11 +64,23 @@ date: 2024-05-29 12:00:00
 }
 
 .purple-box {
-  min-height:200px;background: linear-gradient(to bottom, rebeccapurple, purple);padding-inline:30px;padding-block-start:30px;color:white;align-content:end;
+  min-height:200px;
+  background: linear-gradient(to bottom, rebeccapurple, purple);
+  padding-inline:30px;
+  padding-block-start:30px;
+  color:white;
+  align-content:end;
+}
+
+.purple-box.align-start {
+  align-content: start;
 }
 
 .mask-box-demo {
-  background: linear-gradient( 135deg, papayawhip, salmon );min-height:400px;display:grid;place-items:center;
+  background: linear-gradient( 135deg, papayawhip, salmon );
+  min-height:400px;
+  display:grid;
+  place-items:center;
 }
 
 .flags-top {
@@ -206,7 +218,7 @@ With the CSS above, you can use your `.mask-box` like this:
     <h3>I am a .mask-box</h3>
   </div>
 
-  <div class="purple-box">
+  <div class="purple-box align-start">
     <span>The Content Below the Effect</span>
   </div>
 </div>
@@ -246,7 +258,7 @@ You can easily create sets of classes to apply the new images and sizing:
     <h3>I am a .mask-box</h3>
   </div>
 
-  <div class="purple-box">
+  <div class="purple-box align-start">
     <span>The Content Below the Effect</span>
   </div>
 </div>
@@ -278,7 +290,7 @@ You can easily create sets of classes to apply the new images and sizing:
     <h3>I am a .mask-box</h3>
   </div>
 
-  <div class="purple-box">
+  <div class="purple-box align-start">
     <span>The Content Below the Effect</span>
   </div>
 </div>
