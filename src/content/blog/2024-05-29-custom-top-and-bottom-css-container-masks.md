@@ -183,7 +183,7 @@ One thing to note is that if you're dealing with full-width containers for this 
               var(--bottom-mask-image);
   mask-repeat: no-repeat;
   mask-position: top, top, bottom;
-  mask-size: 100%, 100%, 100%;
+  mask-size: 100%, 100%, 100%; /* You may need to increase the width to 101% on the svg masks to compensate for strange sizing behavior in Firefox */
 }
 ```
 
