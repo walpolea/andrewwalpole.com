@@ -6,6 +6,7 @@ summary: An interactive builder tool that streamlines setting up the popular Lay
 tags:
   - published
   - CSS
+  - Front-end Dev
 tech:
   - Astro
   - Vue 3
