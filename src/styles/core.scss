@@ -48,6 +48,8 @@
   --fs-7: clamp(4.48rem, calc(3.71rem + 3.87vw), 8.34rem);
 }
 
+@view-transition { navigation: auto; }
+
 html {
   scroll-behavior: smooth;
 }
