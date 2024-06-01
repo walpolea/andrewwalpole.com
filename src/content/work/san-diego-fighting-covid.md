@@ -13,7 +13,7 @@ tech:
   - HTML
   - CSS
   - JavaScript
-  - AitTable
+  - AirTable
 ---
 
 # San Diego Fighting Covid
