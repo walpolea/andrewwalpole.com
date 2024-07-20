@@ -7,7 +7,7 @@
 
 import { ref, onMounted } from "vue";
 
-const endpoint = 'https://pagereads.walpolea.workers.dev/';
+const endpoint = 'https://pr.andrewwalpole.com';
 const {title} = defineProps(['title']);
 const reads = ref(0);
 
