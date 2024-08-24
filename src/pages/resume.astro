@@ -13,11 +13,12 @@ import resumeData from '../data/resume.json';
   <PageSection id="resume">
     <div class="contact-info">
       <div class="info-container">
-
         <h1>{resumeData.name}</h1>
         <h2>{resumeData.title}</h2>
         <a href="/static/andrew-walpole-resume.pdf" target="_blank">Download PDF Résumé</a>
       </div>
+
+      
     </div>
 
     <div class="professional-profile">
@@ -25,15 +26,40 @@ import resumeData from '../data/resume.json';
       { resumeData.professionalSummary.map( ps => <p>{ps}</p>)}
     </div>
 
-    <div class="contact-details">
-      <h3>Let's chat!</h3>
-      <a href={`mailto:${resumeData.contact.email}`}>{resumeData.contact.email}</a>
-      <p>{resumeData.contact.phone}</p>
-      <p>{resumeData.contact.location}</p>
+    <div class="skills">
+      <h3>Technical Skills</h3>
+
+      <div>
+        <h4>Front-end Development</h4>
+        <ul>
+          { resumeData.skills.filter(skill => skill.category === 'front-end').map( skill => <li>{skill.skill}</li>)}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Back-end Development</h4>
+        <ul>
+          { resumeData.skills.filter(skill => skill.category === 'back-end').map( skill => <li>{skill.skill}</li>)}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Devops & Cloud</h4>
+        <ul>
+          { resumeData.skills.filter(skill => skill.category === 'devops').map( skill => <li>{skill.skill}</li>)}
+        </ul>
+      </div>
+
+      <div>
+          <h4>Leadership & Management</h4>
+          <ul>
+            { resumeData.skills.filter(skill => skill.category === 'leadership').map( skill => <li>{skill.skill}</li>)}
+          </ul>
+      </div>
     </div>
 
     <div class="work-experience">
-      <h3>Work Experience</h3>
+      <h3>Career & Professional Experience</h3>
       { resumeData.workExperience.map( work => {
         return (
           <div class="work-item">
@@ -48,6 +74,13 @@ import resumeData from '../data/resume.json';
           </div>
         );
       })}
+    </div>
+
+    <div class="contact-details" style="margin-top:40px;">
+      <h3>Let's chat!</h3>
+      <a href={`mailto:${resumeData.contact.email}`}>{resumeData.contact.email}</a>
+      <p>{resumeData.contact.phone}</p>
+      <p>{resumeData.contact.location}</p>
     </div>
   </PageSection>
 </BlankLayout>
@@ -72,7 +105,7 @@ import resumeData from '../data/resume.json';
 
     .contact-info {
       position:relative;
-      grid-row: 1 / 2;
+      grid-row: 1 / 3;
       
 
       .info-container {
@@ -108,6 +141,35 @@ import resumeData from '../data/resume.json';
       }
 
       margin-bottom:40px;
+    }
+
+    .skills {
+      grid-column: 2 / -1;
+
+      column-gap: 30px;
+      display:grid;
+      @media (min-width:1080px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      h3 {
+        grid-column : 1 / -1;
+      }
+
+      h4 {
+        margin-block: 10px 0px;
+        font-size: var(--fs-0);
+      }
+
+      ul {
+        margin: 10px 0 0 0;
+        padding:1.2ch;
+      }
+
+      li {
+        font-size: var(--fs--2);
+        font-weight:400;
+      }
     }
 
     .work-experience {

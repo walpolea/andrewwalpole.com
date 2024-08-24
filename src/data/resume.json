@@ -7,13 +7,9 @@
     "location":"San Diego, CA / US Remote"
   },
   "professionalSummary": [
-    "With 20 years of experience in software engineering, and 10 years of experience leading and mentoring engineers and UX designers, I lead healthy, effective teams through setting clear expectations, continuous coaching and mentoring, and establishing team trust.",
-    "I architect and build performant web applications, high-traffic websites, and internal tools and systems. I’m highly adaptable to new technologies and have experience across multiple front-end and back-end frameworks.",
-    "I partner excellently with teams and external stakeholders to best serve the business and its overall goals. I work hard to bring value and positive change through thoughtful people leadership, deep technical knowledge, and strategic business decision making.",
-    "I see opportunities, make insightful business connections, and know how to make that strategy actionable.",
-    "I lead and communicate in all directions; I’m not afraid to be held and hold others accountable.",
-    "I write clean and robust code; know how to teach to and learn from my team without ego or hubris.",
-    "I can admit when I’m wrong, and don’t let strong opinions cloud my judgment; all situations deserve nuanced, objective analysis."
+    "I’m a full-stack principal-level web developer and engineering leader with expertise in HTML, CSS, JavaScript, and TypeScript. I excel at building responsive, accessible applications and complex digital architectures.",
+    "Proficient in both front-end and back-end development, I collaborate effectively with cross-functional teams to deliver high-quality, scalable solutions.",
+    "My leadership approach emphasizes clear communication, strategic planning, and continuous growth, ensuring that teams stay aligned and productive while meeting business goals."
   ],
   "skills":[
     {
@@ -57,7 +53,11 @@
         "category": "front-end"
     },
     {
-        "skill": "Eleventy, Astro, SSG/SSR",
+        "skill": "Lit, Web Components",
+        "category": "front-end"
+    },
+    {
+        "skill": "Astro, Eleventy, SSG/SSR",
         "category": "front-end"
     },
     {
@@ -65,12 +65,8 @@
         "category": "front-end"
     },
     {
-      "skill": "Node.js & Deno",
+      "skill": "Node.js, Deno, Serverless",
       "category": "back-end"
-    },
-    {
-        "skill": "Serverless & Cloud Platforms",
-        "category": "back-end"
     },
     {
         "skill": "REST, GraphQL, APIs",
@@ -85,19 +81,7 @@
         "category": "back-end"
     },
     {
-        "skill": "Vite, esbuild & Build Tools",
-        "category": "back-end"
-    },
-    {
         "skill": "NoSQL, Firebase, MongoDB",
-        "category": "back-end"
-    },
-    {
-        "skill": "Vercel, Netlify, Cloudflare",
-        "category": "back-end"
-    },
-    {
-        "skill": "Git & GitHub (VCS)",
         "category": "back-end"
     },
     {
@@ -105,10 +89,25 @@
         "category": "back-end"
     },
     {
+        "skill":"AWS, Azure, Google Cloud",
+        "category":"devops"
+    },
+    {
+        "skill":"Vercel, Amplify, Cloudflare",
+        "category":"devops"
+    },
+    {
+        "skill": "Git, GitHub, Bitbucket",
+        "category": "devops"
+    },
+    {
+        "skill": "Vite, esbuild & Build Tools",
+        "category": "devops"
+    },
+    {
         "skill": "DNS Management",
-        "category": "back-end"
+        "category": "devops"
     }
-  
   ],
   "workExperience":[
     {
