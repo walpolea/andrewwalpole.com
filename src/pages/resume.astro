@@ -144,7 +144,9 @@ import resumeData from '../data/resume.json';
     }
 
     .skills {
+      @media (min-width:1080px) {
       grid-column: 2 / -1;
+      }
 
       column-gap: 30px;
       display:grid;
@@ -187,8 +189,7 @@ import resumeData from '../data/resume.json';
       > h3 {
         grid-column: 2 / -1;
 
-        @media (max-width:460px) {
-          text-align: center;
+        @media (max-width:1079px) {
           grid-column: 1 / -1;
         }
       }
@@ -212,14 +213,22 @@ import resumeData from '../data/resume.json';
           grid-column: 1 / -1;
         }
 
+        @media (max-width:1079px) {
+          grid-column: 1 / -1;
+        }
+
         h4, h5 {
           margin-block: 1rem;
         }
       }
 
       .blurbs {
+        
         grid-column:  2 / -1;
 
+        @media (max-width:1079px) {
+          grid-column: 1 / -1;
+        }
         .work-blurb {
           font-size: var(--fs--2);
 
