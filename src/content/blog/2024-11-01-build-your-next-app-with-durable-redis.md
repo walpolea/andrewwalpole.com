@@ -3,7 +3,8 @@ tags:
   - post
   - published
   - web
-  - insights
+  - back-end
+  - web architecture
 title: Build Your Next App with Durable Redis
 slug: build-your-next-app-with-durable-redis
 summary: Capability delivered through simplicity is one of my favorite features of tech. Digging into using durable redis to power a web-application, I found that it hits a perfect sweet spot of being easy to work with and capable of storing and relating diverse application data.
