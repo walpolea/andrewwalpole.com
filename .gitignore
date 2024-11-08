@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# trash
+_trashbin
+
 # generated types
 .astro/
 
