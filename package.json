@@ -11,15 +11,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.0.0",
+    "@astrojs/mdx": "^4.2.0",
     "@astrojs/rss": "^4.0.1",
     "@astrojs/sitemap": "^3.0.0",
-    "@astrojs/vue": "^4.0.5",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "astro": "^4.0.0",
+    "@astrojs/vue": "^5.0.7",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "astro": "^5.5.2",
     "html2canvas": "^1.4.1",
     "markdown-it": "^14.0.0",
-    "media-chrome": "^2.0.1",
+    "media-chrome": "^4.8.0",
     "sanitize-html": "^2.9.0",
     "vue": "^3.2.47"
   },

@@ -7,9 +7,11 @@
     "location":"San Diego, CA / US Remote"
   },
   "professionalSummary": [
-    "I’m a full-stack principal-level web developer and engineering leader with expertise in HTML, CSS, JavaScript, and TypeScript. I excel at building responsive, accessible applications and complex digital architectures.",
-    "Proficient in both front-end and back-end development, I collaborate effectively with cross-functional teams to deliver high-quality, scalable solutions.",
-    "My leadership approach emphasizes clear communication, strategic planning, and continuous growth, ensuring that teams stay aligned and productive while meeting business goals."
+    "Strategic engineering leader with over 20 years of experience driving scalable web architectures, optimizing development workflows, and leading high-performing teams.",
+    "Passionate about technical business strategy and operational excellence, serving as a key driver of innovation, growth, and efficiency by aligning engineering initiatives with company objectives.",
+    "Proficient in both front-end and back-end development, I collaborate effectively with cross-functional teams to deliver high-quality, accessible, scalable solutions.",
+    "Skilled leader constantly exercising clear communication, strategic planning, and continuous growth, ensuring that teams stay aligned and productive while meeting business goals.",
+    "A forever player-coach: staying in-tune with a deep understanding of company operations while building genuine, trusting, working relationships with my team; growing capabilities through mentorship and delivering high quality work over the long-term."
   ],
   "skills":[
     {
@@ -111,6 +113,25 @@
   ],
   "workExperience":[
     {
+        "company":"fingerpaint",
+        "website":"https://fingerpaint.com",
+        "title":"Vice President, Web Engineering",
+        "startDate": {
+            "month": "03",
+            "monthLong":"March",
+            "year": "2025"
+        },
+        "endDate":{
+            "year": "Current"
+        },
+        "blurbs":[
+            "Led the Web Development, DevOps and QA Teams; owned strategy, optimized development workflows, and drove innovation in scalable web technologies for enterprise clients in the pharmaceutical sector.",
+            "Created and owned company-wide web development standards and best practices, improving quality and consistency across engineering projects, leading to a consistent reduction in QA tickets and bugs, and improvement in code quality.",
+            "Served as a critical technical and strategic consultant, enhancing collaboration between developers, digital producers, project managers and client teams.",
+            "Architected diverse product and web solutions tailored to specific client business needs and technical constraints."
+        ]
+        },
+    {
     "company":"fingerpaint",
     "website":"https://fingerpaint.com",
     "title":"Director of Web Development",
@@ -120,15 +141,15 @@
         "year": "2023"
     },
     "endDate":{
-        "year": "Current"
+        "month": "02",
+        "monthLong": "February",
+        "year": "2025"
     },
     "blurbs":[
-        "Led and managed a team of five developers, delivering performant, accessible websites for the pharmaceutical industry.",
-        "Critical technical consultant for the MarTech department, fostering collaboration between developers, digital producers, and client teams.",
-        "Established and upheld our company's web development standards, ensuring consistency and quality across projects.",
-        "Advised on optimal technical solutions, ensuring clients' needs were met with efficient and scalable architectures.",
-        "Skillfully estimated project timelines, effort and resources, even amongst ambiguous and limited project details.",
-        "Designed and implemented robust and adaptable technical strategies and processes, positioning our projects for long-term success."
+        "Led a team of web developers in building complex, performant, accessible web applications and websites for the pharmaceutical industry.",
+        "Architected scalable and efficient technical solutions, including an Astro and Vue based website boilerplate, reducing project development time and costs by 25-50%.",
+        "Mentored and upskilled engineers, instituted code reviews, technical and operational team goals, weekly 1-on-1 and team meetings, improving capabilities, team unity, and overall productivity, satisfaction, long-term retention and improved code quality.",
+        "Built and managed projects built in Vue/Nuxt, React/Next.js, Angular, .NET, Gatsby, WordPress, Drupal, Veeva and other web frameworks, offering valuable services in being a trusted one-stop development shop."
     ]
     },
     {

@@ -3,7 +3,7 @@
 
 I'm a principal software engineer, focused specifically on web development and engineering leadership.
 
-Based in San Diego, I'm currently a **Director of Web Development** at [Fingerpaint](https://fingerpaint.com) and formerly the **Director of Web Development** at [Traina](hjttps://wearetraina.com) and **Manager of Experience Design** at [Jack in the Box](https://jackinthebox.com).
+Based in San Diego, I'm currently the **VP of Web Engineering** at [Fingerpaint](https://www.fingerpaint.com) and formerly the **Director of Web Development** at [Traina](hjttps://wearetraina.com) and **Manager of Experience Design** at [Jack in the Box](https://jackinthebox.com).
 
 I have an *A.E. in Software Engineering* from Oregon Tech and a *B.S. in Web Design & Development* from AiCASD.
 
